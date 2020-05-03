@@ -1,7 +1,7 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! $HOME/.Xresources from T60p - Debian Buster !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Refresh this config file by running:
+! To see the changes on an XTerm, after editing this config file, issue:
 ! xrdb -merge ~/.Xresources
 ! xrdb ~/.Xresources
 
@@ -35,7 +35,7 @@ xterm*cursorBlink:			True
 !!xterm*pointerColor:			White
 !!xterm*pointerColorBackground:		Black
 !!xterm*cursorColor:			Darkgrey
-!!xterm*cursorColor:			Orange
+xterm*cursorColor:			Orange
 
 xterm*VT10x0.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
