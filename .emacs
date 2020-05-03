@@ -146,13 +146,13 @@
 
 ;; -----------------------------------------------
 ;; Themes:
-;; (The *.el file is stored on the ~/Emacs/Lisp/ directory)
+;; (The *.el files are stored on the ~/Emacs/Lisp/ directory)
 ;; -----------------------------------------------
 
 ;; Lab Burn works Ok with only this line:
 ;; (require 'labburn-theme)
 
-;; Tronesque needs those two lines:
+;; Tronesque needs this two lines:
 (require 'tronesque-theme)
 (tronesque-mode-line)
 
