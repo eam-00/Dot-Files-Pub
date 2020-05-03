@@ -1,0 +1,562 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! $HOME/.Xresources from T60p - Debian Buster !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Refresh this config file by running:
+! xrdb -merge ~/.Xresources
+! xrdb ~/.Xresources
+
+!! -----------------------------------------------
+!! -----------------------------------------------
+
+!! Xft
+!! https://github.com/vonbrownie/dotfiles/blob/master/.Xresources
+Xft.dpi:				96
+Xft.antialias:				true
+Xft.rgba:				rgb
+Xft.hinting:				true
+Xft.hintstyle:				hintslight
+
+!! -----------------------------------------------
+
+!! XTerm
+!! http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
+
+xterm*faceName:				CPMono_v07 Plain
+!!xterm*faceName:				Ubuntu Mono
+!!xterm*faceName:				ShareTechMono-Regular
+!!xterm*faceName:				Perfect DOS VGA 437
+xterm*faceSize:				10
+xterm*renderFont:			true
+
+!!Xcursor.theme:				Google_Cursor
+Xcursor.theme:				Adwaita
+xterm*cursorBlink:			True
+
+!!xterm*pointerColor:			White
+!!xterm*pointerColorBackground:		Black
+!!xterm*cursorColor:			Darkgrey
+!!xterm*cursorColor:			Orange
+
+xterm*VT10x0.Translations: #override \
+    Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+    Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
+
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font() \n\
+    Ctrl <Key> 0: set-vt-font(d)
+
+*VT100.translations:#override\n<Key>F12:set-reverse-video(toggle)
+
+! remove the additional black border
+XTerm*borderWidth:			0
+XTerm*internalBorder:			0
+
+! Only select text
+xterm*highlightSelection:		true
+! Remove trailing spaces
+xterm*trimSelection:			true
+
+! Lines of output that you can scroll back over
+xterm*saveLines:			4096
+
+! Do not scroll when there is new input e.g. tail -f /var/syslog
+xterm*scrollTtyOutput:			false
+
+! pressing a key automatically scrolls to the bottom
+xterm*scrollKey:			true
+
+! Doesnt work on Debian Sids xterm:
+!XTerm*alternateScroll:			true
+
+! Works on Debian Sids xterm:
+!xterm*VT100.alternateScroll:		true
+
+xterm*alternateScroll:			true
+xterm*multiScroll:			true
+xterm*jumpScroll:			true
+xterm*fastScroll:			true
+
+! Do not clear the screen after the program exits
+!! XTerm*VT100*titeInhibit:             true
+!! https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html
+xterm*charClass:			33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+!XTerm*on3Clicks:                       regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+
+!! Xterm Colors
+xterm*termName:				xterm-256color
+
+! clicking a line selects only from the current word forward
+xterm*cutToBeginningOfLine:		false
+! and dont include a trailing newline in the selection
+xterm*cutNewline:			false
+
+! select word on two clicks
+xterm*on2Clicks:			word
+! select whole line on three clicks
+xterm*on3Clicks:			line
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! ! Zenburn
+! ! https://sunaku.github.io/zenburn-terminal-color-scheme.html
+! ! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
+! !BLK Cursor
+! #define _color0        #000d18
+! #define _color8        #000d18
+! !RED Tag
+! #define _color1        #e89393
+! #define _color9        #e89393
+! !GRN SpecialKey
+! #define _color2        #9ece9e
+! #define _color10       #9ece9e
+! !YEL Keyword
+! #define _color3        #f0dfaf
+! #define _color11       #f0dfaf
+! !BLU Number
+! #define _color4        #8cd0d3
+! #define _color12       #8cd0d3
+! !MAG Precondit
+! #define _color5        #c0bed1
+! #define _color13       #c0bed1
+! !CYN Float
+! #define _color6        #dfaf8f
+! #define _color14       #dfaf8f
+! !WHT Search
+! #define _color7        #efefef
+! #define _color15       #efefef
+! !FMT Include, StatusLine, ErrorMsg
+! #define _colorBD       #ffcfaf
+! #define _colorUL       #ccdc90
+! #define _colorIT       #80d4aa
+! !TXT Normal, Normal, Cursor
+! #define _foreground    #dcdccc
+! #define _background    #1f1f1f
+! #define _cursorColor   #8faf9f
+! URxvt*color0         : _color0
+! URxvt*color1         : _color1
+! URxvt*color2         : _color2
+! URxvt*color3         : _color3
+! URxvt*color4         : _color4
+! URxvt*color5         : _color5
+! URxvt*color6         : _color6
+! URxvt*color7         : _color7
+! URxvt*color8         : _color8
+! URxvt*color9         : _color9
+! URxvt*color10        : _color10
+! URxvt*color11        : _color11
+! URxvt*color12        : _color12
+! URxvt*color13        : _color13
+! URxvt*color14        : _color14
+! URxvt*color15        : _color15
+! URxvt*colorBD        : _colorBD
+! URxvt*colorIT        : _colorIT
+! URxvt*colorUL        : _colorUL
+! URxvt*foreground     : _foreground
+! URxvt*background     : _background
+! URxvt*cursorColor    : _cursorColor
+! XTerm*color0         : _color0
+! XTerm*color1         : _color1
+! XTerm*color2         : _color2
+! XTerm*color3         : _color3
+! XTerm*color4         : _color4
+! XTerm*color5         : _color5
+! XTerm*color6         : _color6
+! XTerm*color7         : _color7
+! XTerm*color8         : _color8
+! XTerm*color9         : _color9
+! XTerm*color10        : _color10
+! XTerm*color11        : _color11
+! XTerm*color12        : _color12
+! XTerm*color13        : _color13
+! XTerm*color14        : _color14
+! XTerm*color15        : _color15
+! XTerm*colorBD        : _colorBD
+! XTerm*colorIT        : _colorIT
+! XTerm*colorUL        : _colorUL
+! XTerm*foreground     : _foreground
+! XTerm*background     : _background
+! XTerm*cursorColor    : _cursorColor
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! ! Solarized Dark
+! ! https://github.com/solarized/xresources/blob/master/Xresources.dark
+! #define S_base03        #002b36
+! #define S_base02        #073642
+! #define S_base01        #586e75
+! #define S_base00        #657b83
+! #define S_base0         #839496
+! #define S_base1         #93a1a1
+! #define S_base2         #eee8d5
+! #define S_base3         #fdf6e3
+
+! *background:            S_base03
+! *foreground:            S_base0
+! *fadeColor:             S_base03
+! *cursorColor:           S_base1
+! *pointerColorBackground:S_base01
+! *pointerColorForeground:S_base1
+
+! #define S_yellow        #b58900
+! #define S_orange        #cb4b16
+! #define S_red           #dc322f
+! #define S_magenta       #d33682
+! #define S_violet        #6c71c4
+! #define S_blue          #268bd2
+! #define S_cyan          #2aa198
+! #define S_green         #859900
+
+! !! black dark/light
+! *color0:                S_base02
+! *color8:                S_base03
+
+! !! red dark/light
+! *color1:                S_red
+! *color9:                S_orange
+
+! !! green dark/light
+! *color2:                S_green
+! *color10:               S_base01
+
+! !! yellow dark/light
+! *color3:                S_yellow
+! *color11:               S_base00
+
+! !! blue dark/light
+! *color4:                S_blue
+! *color12:               S_base0
+
+! !! magenta dark/light
+! *color5:                S_magenta
+! *color13:               S_violet
+
+! !! cyan dark/light
+! *color6:                S_cyan
+! *color14:               S_base1
+
+! !! white dark/light
+! *color7:                S_base2
+! *color15:               S_base3
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! ! Solarized Light
+! ! https://github.com/solarized/xresources/blob/master/Xresources.light
+! #define S_base03        #002b36
+! #define S_base02        #073642
+! #define S_base01        #586e75
+! #define S_base00        #657b83
+! #define S_base0         #839496
+! #define S_base1         #93a1a1
+! #define S_base2         #eee8d5
+! #define S_base3         #fdf6e3
+
+! *background:            S_base3
+! *foreground:            S_base00
+! *fadeColor:             S_base3
+! *cursorColor:           S_base01
+! *pointerColorBackground:S_base1
+! *pointerColorForeground:S_base01
+
+! #define S_yellow        #b58900
+! #define S_orange        #cb4b16
+! #define S_red           #dc322f
+! #define S_magenta       #d33682
+! #define S_violet        #6c71c4
+! #define S_blue          #268bd2
+! #define S_cyan          #2aa198
+! #define S_green         #859900
+
+! !! black dark/light
+! *color0:                S_base02
+! *color8:                S_base03
+
+! !! red dark/light
+! *color1:                S_red
+! *color9:                S_orange
+
+! !! green dark/light
+! *color2:                S_green
+! *color10:               S_base01
+
+! !! yellow dark/light
+! *color3:                S_yellow
+! *color11:               S_base00
+
+! !! blue dark/light
+! *color4:                S_blue
+! *color12:               S_base0
+
+! !! magenta dark/light
+! *color5:                S_magenta
+! *color13:               S_violet
+
+! !! cyan dark/light
+! *color6:                S_cyan
+! *color14:               S_base1
+
+! !! white dark/light
+! *color7:                S_base2
+! *color15:               S_base3
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! ! Atom One Light theme
+! ! https://gist.github.com/VovanR/9867373f612693778573
+! xterm*background: #f9f9f9
+! xterm*foreground: #383a42
+! xterm*cursorColor: #d0d0d0
+! xterm*color0: #000000
+! xterm*color1: #E45649
+! xterm*color2: #50A14F
+! xterm*color3: #986801
+! xterm*color4: #4078F2
+! xterm*color5: #A626A4
+! xterm*color6: #0184BC
+! xterm*color7: #A0A1A7
+! xterm*color8: #5c6370
+! xterm*color9: #e06c75
+! xterm*color10: #50A14F
+! xterm*color11: #986801
+! xterm*color12: #4078F2
+! xterm*color13: #A626A4
+! xterm*color14: #0184BC
+! xterm*color15: #ffffff
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! ! Colour scheme: hyperion (light variant)
+! ! By Protesilaos Stavrou
+! ! https://protesilaos.com/hyperion
+! xterm*background: #f6f6f6
+! xterm*foreground: #4d654e
+! xterm*cursorColor: #4d654e
+! xterm*color0: #0a2d3c
+! xterm*color1: #d94832
+! xterm*color2: #329c50
+! xterm*color3: #dbac13
+! xterm*color4: #1d8fde
+! xterm*color5: #dc76aa
+! xterm*color6: #0eaac8
+! xterm*color7: #e6e6e6
+! xterm*color8: #1a3d4c
+! xterm*color9: #dc7d3a
+! xterm*color10: #4d654e
+! xterm*color11: #8d9474
+! xterm*color12: #6a8ba9
+! xterm*color13: #aa7deb
+! xterm*color14: #9ebcc8
+! xterm*color15: #f6f6f6
+
+! ! -----------------------------------------------------------------------------
+! ! -----------------------------------------------------------------------------
+! ! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! ! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+
+! ! Project:    Nord XResources
+! ! Version:    0.1.0
+! ! Repository: https://github.com/arcticicestudio/nord-xresources
+! ! License:    MIT
+
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+
+*.foreground:			nord4
+*.background:			nord0
+*.cursorColor:			nord4
+*fading:			35
+*fadeColor:			nord3
+
+*.color0:			nord1
+*.color1:			nord11
+*.color2:			nord14
+*.color3:			nord13
+*.color4:			nord9
+*.color5:			nord15
+*.color6:			nord8
+*.color7:			nord5
+*.color8:			nord3
+*.color9:			nord11
+*.color10:			nord14
+*.color11:			nord13
+*.color12:			nord9
+*.color13:			nord15
+*.color14:			nord7
+*.color15:			nord6
+
+! ! -----------------------------------------------------------------------------
+! ! -----------------------------------------------------------------------------
+! ! File: gruvbox-dark.xresources
+! ! Description: Retro groove colorscheme generalized
+! ! Author: morhetz <morhetz@gmail.com>
+! ! Source: https://github.com/morhetz/gruvbox-generalized
+! ! Last Modified: 6 Sep 2014
+! ! https://github.com/morhetz/gruvbox-contrib/blob/master/xresources/gruvbox-dark.xresources
+! ! -----------------------------------------------------------------------------
+
+! ! hard contrast: *background: #1d2021
+! *background: #282828
+! ! soft contrast: *background: #32302f
+! *foreground: #ebdbb2
+! ! Black + DarkGrey
+! *color0:  #282828
+! *color8:  #928374
+! ! DarkRed + Red
+! *color1:  #cc241d
+! *color9:  #fb4934
+! ! DarkGreen + Green
+! *color2:  #98971a
+! *color10: #b8bb26
+! ! DarkYellow + Yellow
+! *color3:  #d79921
+! *color11: #fabd2f
+! ! DarkBlue + Blue
+! *color4:  #458588
+! *color12: #83a598
+! ! DarkMagenta + Magenta
+! *color5:  #b16286
+! *color13: #d3869b
+! ! DarkCyan + Cyan
+! *color6:  #689d6a
+! *color14: #8ec07c
+! ! LightGrey + White
+! *color7:  #a89984
+! *color15: #ebdbb2
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! File: gruvbox-light.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+! ! hard contrast: *background: #f9f5d7
+! *background: #fbf1c7
+! ! soft contrast: *background: #f2e5bc
+! *foreground: #3c3836
+! ! Black + DarkGrey
+! *color0:  #fdf4c1
+! *color8:  #928374
+! ! DarkRed + Red
+! *color1:  #cc241d
+! *color9:  #9d0006
+! ! DarkGreen + Green
+! *color2:  #98971a
+! *color10: #79740e
+! ! DarkYellow + Yellow
+! *color3:  #d79921
+! *color11: #b57614
+! ! DarkBlue + Blue
+! *color4:  #458588
+! *color12: #076678
+! ! DarkMagenta + Magenta
+! *color5:  #b16286
+! *color13: #8f3f71
+! ! DarkCyan + Cyan
+! *color6:  #689d6a
+! *color14: #427b58
+! ! LightGrey + White
+! *color7:  #7c6f64
+! *color15: #3c3836
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
+xcalc*geometry: 300x375
+XCalc*ShapeStyle: rectangle
+
+xcalc*title:				SuperCalc
+!! xcalc*font:				-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
+!! xcalc*font:				9x18
+xcalc*font:				-*-lucidatypewriter-bold-r-*-*-16-160-*-*-*-*-iso10646-1
+!! xcalc*font:				-*-lucida-bold-r-*-*-18-140-*-*-*-*-iso10646-1
+!!xcalc*faceName:				Ubuntu Mono
+!!xcalc*faceSize:				13
+
+xcalc*ti.button1.vertDistance:		4
+xcalc*ti.button2.vertDistance:		4
+xcalc*ti.button3.vertDistance:		4
+xcalc*ti.button4.vertDistance:		4
+xcalc*ti.button5.vertDistance:		4
+xcalc*ti.background:			gray90
+
+xcalc.ti.button20.label:		/
+xcalc.ti.button25.label:		x
+
+xcalc*ti.bevel.borderColor:		gray65
+xcalc*ti.bevel.borderWidth:		0
+xcalc*ti.bevel.vertDistance:		4
+xcalc*ti.bevel.defaultDistance:		0
+xcalc*ti.bevel.background:		rgb:b/c/b
+xcalc*ti.bevel.screen*background:	rgb:b/c/b
+xcalc*ti.bevel.screen.borderColor:	rgb:b/c/b
+xcalc*ti.bevel.screen.vertDistance:	10
+xcalc*ti.bevel.screen.horizDistance:	10
+xcalc*ti.bevel.screen*left:		chainLeft
+xcalc*ti.bevel.screen*right:		chainRight
+xcalc*ti.bevel.screen*top:		chainTop
+xcalc*ti.bevel.screen*bottom:		chainBottom
+xcalc*ti.bevel.screen*LCD.foreground:	gray10
+xcalc*ti.bevel.screen*INV.vertDistance:	0
+
+!!xcalc*ti.Command.borderColor: gray65
+!!xcalc*ti.Command.background: gray85
+!!xcalc*ti.Command.foreground: gray30
+
+xcalc*ti.Command.borderColor:		gray65
+xcalc*ti.Command.background:		gray65
+xcalc*ti.Command.foreground:		gray65
+
+!!xcalc.ti.button5.background: Orange3
+xcalc*ti.button5.background:		rgb:e/b/b
+xcalc*ti.button20.background:		rgb:e/d/c
+xcalc*ti.button25.background:		rgb:e/d/c
+xcalc*ti.button30.background:		rgb:e/d/c
+xcalc*ti.button35.background:		rgb:e/d/c
+xcalc*ti.button40.background:		rgb:b/b/e
+xcalc*ti.button22.background:		gray95
+xcalc*ti.button23.background:		gray95
+xcalc*ti.button24.background:		gray95
+xcalc*ti.button27.background:		gray95
+xcalc*ti.button28.background:		gray95
+xcalc*ti.button29.background:		gray95
+xcalc*ti.button32.background:		gray95
+xcalc*ti.button33.background:		gray95
+xcalc*ti.button34.background:		gray95
+xcalc*ti.button37.background:		gray95
+xcalc*ti.button38.background:		gray95
+xcalc*ti.button39.background:		gray95
+
+!! -----------------------------------------------
+
+XClock*analog      : false
+XClock*twentyfour  : true
+XClock*padding     : 0
+XClock*geometry    : -2-2
+XClock*render      : false
+XClock*font        : -misc-fixed-bold-r-normal-*-13-*-*-*-*-*-iso10646-1
+XClock*height      : 12
+XClock*background  : dimgray
+XClock*foreground  : white
+XClock*borderWidth : 0
+
+!! -----------------------------------------------
+
+!! EoF !!
