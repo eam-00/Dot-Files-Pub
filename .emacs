@@ -12,7 +12,7 @@
 
 ;; -----------------------------------------------
 ;; Modeline customization
-;; (display-time) ;; No need for this if you have Desktop Environment
+;; (display-time) ;; No need for this if you have a working clock somewhere
 (setq line-number-mode t)
 (setq column-number-mode t)
 
@@ -146,10 +146,13 @@
 
 ;; -----------------------------------------------
 ;; Themes:
+;; (The *.el file is stored on the ~/Emacs/Lisp/ directory)
 ;; -----------------------------------------------
 
+;; Lab Burn works Ok with only this line:
 ;; (require 'labburn-theme)
 
+;; Tronesque needs those two lines:
 (require 'tronesque-theme)
 (tronesque-mode-line)
 
