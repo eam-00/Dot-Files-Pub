@@ -1,0 +1,25 @@
+## --------------------------------------------
+## $HOME/.kshrc from Thinkpad T60 - OpenBSD 6.6
+## --------------------------------------------
+
+alias df='df -h'
+alias du='du -sh'
+alias j='jobs -l'
+alias lsa='ls -lasht'
+## alias tset   'set noglob histchars=""; eval `\tset -s \!*`; unset noglob histchars'
+## alias z              suspend
+
+export VISUAL=mg
+export EDITOR=$VISUAL
+export PAGER=less
+HISTSIZE=500
+HISTFILE="$HOME/.ksh_history"
+HISTEDIT=$EDITOR
+
+set -o ignoreeof
+set -o emacs
+
+# Put the current directory and history number in the prompt
+PS1='$_pwd [!]\$ '
+
+## EoF ##
