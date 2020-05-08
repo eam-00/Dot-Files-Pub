@@ -1,5 +1,6 @@
 ;; -----------------------------------------------
 ;; $HOME/.emacs from Thinkpad T60p - Debian Buster
+;; GNU Emacs 26.1 - emacs-nox      1:26.1+1-3.2+deb10u1
 ;; -----------------------------------------------
 
 ;; -----------------------------------------------
@@ -17,7 +18,7 @@
 (setq column-number-mode t)
 
 ;; -----------------------------------------------
-;; Keyboards shortcuts
+;; Keyboard shortcuts
 (define-key global-map "\C-h" 'backward-delete-char)
 (define-key global-map "\M-h" 'backward-kill-word)
 (define-key global-map "\C-x\C-u" 'undo)
