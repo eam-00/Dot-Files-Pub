@@ -31,6 +31,8 @@
 ;; -----------------------------------------------
 ;; Backups
 ;; -----------------------------------------------
+;; Non-versioning:
+;; --------------
 ;; (defun make-backup-file-name (file-name)
 ;;   "Create the non-numeric backup file name for `file-name'."
 ;;   (require 'dired)
@@ -39,23 +41,8 @@
 ;;       (dired-replace-in-string "/" "|" file-name))
 ;;       (concat file-name "~")))
 
-;; (setq delete-old-versions t
-;;   kept-new-versions 10
-;;   kept-old-versions 20
-;;   version-control t)
-
-;; (setq version-control 'numbered
-;;       make-backup-files t
-;;       delete-old-versions 'never)
-
-;; (setq
-;;  backup-by-copying t     ; don't clobber symlinks
-;;  kept-new-versions 10    ; keep 10 latest versions
-;;  kept-old-versions 0     ; don't bother with old versions
-;;  delete-old-versions t   ; don't ask about deleting old versions
-;;  version-control t       ; number backups
-;;  vc-make-backup-files t) ; backup version controlled files
-
+;; Versioning:
+;; ----------
 ;; Save all the backups on one place and also make versioned (numbered) backup copies
 ;; Use this on non SSD setups
 ;; https://emacs.stackexchange.com/questions/13993/version-control-using-the-usual-backup-system-of-emacs
