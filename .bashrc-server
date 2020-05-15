@@ -1,6 +1,6 @@
-# ------------------------------
-## ~/.bashrc default file
-## ------------------------------
+# ------------------------------------
+## $HOME/.bashrc generic file for a server
+## -----------------------------------
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
