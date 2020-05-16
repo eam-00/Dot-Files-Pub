@@ -1,4 +1,6 @@
-;;;; .zile configuration
+;; -------------------------
+;; Default .zile config file
+;; -------------------------
 
 ;; Rebind keys with:
 ;; (global-set-key "key" 'func)
@@ -71,7 +73,7 @@
 ;; (setq backup-directory nil)
 (setq backup-directory t)
 
-(setq backup-directory "~/Emacs/Backups")
+(setq backup-directory "~/Zile/Backups")
 
 (global-set-key "\C-h"		'backward-delete-char)
 
