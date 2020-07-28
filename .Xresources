@@ -1,7 +1,7 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! $HOME/.Xresources from T60p - Debian Buster !!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! To see the changes on an XTerm, after editing this config file, issue:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! $HOME/.Xresources from Optiplex 755 - Debian Buster !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Refresh config by running:
 ! xrdb -merge ~/.Xresources
 ! xrdb ~/.Xresources
 
@@ -25,6 +25,7 @@ xterm*faceName:				CPMono_v07 Plain
 !!xterm*faceName:				Ubuntu Mono
 !!xterm*faceName:				ShareTechMono-Regular
 !!xterm*faceName:				Perfect DOS VGA 437
+
 xterm*faceSize:				10
 xterm*renderFont:			true
 
@@ -35,7 +36,7 @@ xterm*cursorBlink:			True
 !!xterm*pointerColor:			White
 !!xterm*pointerColorBackground:		Black
 !!xterm*cursorColor:			Darkgrey
-xterm*cursorColor:			Orange
+!!xterm*cursorColor:			Orange
 
 xterm*VT10x0.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
@@ -49,7 +50,7 @@ xterm*VT10x0.Translations: #override \
 
 *VT100.translations:#override\n<Key>F12:set-reverse-video(toggle)
 
-! remove the additional black border
+! Remove the additional black border
 XTerm*borderWidth:			0
 XTerm*internalBorder:			0
 
@@ -97,8 +98,8 @@ xterm*on2Clicks:			word
 ! select whole line on three clicks
 xterm*on3Clicks:			line
 
-! -----------------------------------------------------------------------------
-! -----------------------------------------------------------------------------
+! ! -----------------------------------------------------------------------------
+! ! -----------------------------------------------------------------------------
 ! ! Zenburn
 ! ! https://sunaku.github.io/zenburn-terminal-color-scheme.html
 ! ! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
@@ -134,28 +135,6 @@ xterm*on3Clicks:			line
 ! #define _foreground    #dcdccc
 ! #define _background    #1f1f1f
 ! #define _cursorColor   #8faf9f
-! URxvt*color0         : _color0
-! URxvt*color1         : _color1
-! URxvt*color2         : _color2
-! URxvt*color3         : _color3
-! URxvt*color4         : _color4
-! URxvt*color5         : _color5
-! URxvt*color6         : _color6
-! URxvt*color7         : _color7
-! URxvt*color8         : _color8
-! URxvt*color9         : _color9
-! URxvt*color10        : _color10
-! URxvt*color11        : _color11
-! URxvt*color12        : _color12
-! URxvt*color13        : _color13
-! URxvt*color14        : _color14
-! URxvt*color15        : _color15
-! URxvt*colorBD        : _colorBD
-! URxvt*colorIT        : _colorIT
-! URxvt*colorUL        : _colorUL
-! URxvt*foreground     : _foreground
-! URxvt*background     : _background
-! URxvt*cursorColor    : _cursorColor
 ! XTerm*color0         : _color0
 ! XTerm*color1         : _color1
 ! XTerm*color2         : _color2
@@ -327,9 +306,9 @@ xterm*on3Clicks:			line
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! ! Colour scheme: hyperion (light variant)
-! ! By Protesilaos Stavrou
-! ! https://protesilaos.com/hyperion
+! ! ! Colour scheme: hyperion (light variant)
+! ! ! By Protesilaos Stavrou
+! ! ! https://protesilaos.com/hyperion
 ! xterm*background: #f6f6f6
 ! xterm*foreground: #4d654e
 ! xterm*cursorColor: #4d654e
@@ -350,58 +329,57 @@ xterm*on3Clicks:			line
 ! xterm*color14: #9ebcc8
 ! xterm*color15: #f6f6f6
 
-! ! -----------------------------------------------------------------------------
-! ! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
 ! ! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
 ! ! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
-
 ! ! Project:    Nord XResources
 ! ! Version:    0.1.0
 ! ! Repository: https://github.com/arcticicestudio/nord-xresources
 ! ! License:    MIT
 
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+! #define nord0 #2E3440
+! #define nord1 #3B4252
+! #define nord2 #434C5E
+! #define nord3 #4C566A
+! #define nord4 #D8DEE9
+! #define nord5 #E5E9F0
+! #define nord6 #ECEFF4
+! #define nord7 #8FBCBB
+! #define nord8 #88C0D0
+! #define nord9 #81A1C1
+! #define nord10 #5E81AC
+! #define nord11 #BF616A
+! #define nord12 #D08770
+! #define nord13 #EBCB8B
+! #define nord14 #A3BE8C
+! #define nord15 #B48EAD
 
-*.foreground:			nord4
-*.background:			nord0
-*.cursorColor:			nord4
-*fading:			35
-*fadeColor:			nord3
+! *.foreground:			nord4
+! *.background:			nord0
+! *.cursorColor:			nord4
+! *fading:			35
+! *fadeColor:			nord3
 
-*.color0:			nord1
-*.color1:			nord11
-*.color2:			nord14
-*.color3:			nord13
-*.color4:			nord9
-*.color5:			nord15
-*.color6:			nord8
-*.color7:			nord5
-*.color8:			nord3
-*.color9:			nord11
-*.color10:			nord14
-*.color11:			nord13
-*.color12:			nord9
-*.color13:			nord15
-*.color14:			nord7
-*.color15:			nord6
+! *.color0:			nord1
+! *.color1:			nord11
+! *.color2:			nord14
+! *.color3:			nord13
+! *.color4:			nord9
+! *.color5:			nord15
+! *.color6:			nord8
+! *.color7:			nord5
+! *.color8:			nord3
+! *.color9:			nord11
+! *.color10:			nord14
+! *.color11:			nord13
+! *.color12:			nord9
+! *.color13:			nord15
+! *.color14:			nord7
+! *.color15:			nord6
 
-! ! -----------------------------------------------------------------------------
-! ! -----------------------------------------------------------------------------
+! ! ! -----------------------------------------------------------------------------
+! ! ! -----------------------------------------------------------------------------
 ! ! File: gruvbox-dark.xresources
 ! ! Description: Retro groove colorscheme generalized
 ! ! Author: morhetz <morhetz@gmail.com>
@@ -478,17 +456,212 @@ xterm*on3Clicks:			line
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
+! !! Mocha Dark
+! !! https://terminal.sexy/
 
-xcalc*geometry: 300x375
-XCalc*ShapeStyle: rectangle
+! ! special
+! *.foreground:   #8a8986
+! *.background:   #28211c
+! *.cursorColor:  #8a8986
+
+! ! black
+! *.color0:       #28211c
+! *.color8:       #666666
+
+! ! red
+! *.color1:       #cf6a4c
+! *.color9:       #cf6a4c
+
+! ! green
+! *.color2:       #54be0d
+! *.color10:      #54be0d
+
+! ! yellow
+! *.color3:       #f9ee98
+! *.color11:      #f9ee98
+
+! ! blue
+! *.color4:       #5ea6ea
+! *.color12:      #5ea6ea
+
+! ! magenta
+! *.color5:       #9b859d
+! *.color13:      #9b859d
+
+! ! cyan
+! *.color6:       #afc4db
+! *.color14:      #afc4db
+
+! ! white
+! *.color7:       #8a8986
+! *.color15:      #baae9e
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
+! !! My Dark Pastel
+! !! https://terminal.sexy/
+! ! special
+! *.foreground:   #d1ccb0
+! *.background:   #474343
+! *.cursorColor:  #d1ccb0
+
+! ! black
+! *.color0:       #20201d
+! *.color8:       #7d7a68
+
+! ! red
+! *.color1:       #d73737
+! *.color9:       #cc4d13
+
+! ! green
+! *.color2:       #60ac39
+! *.color10:      #60ac39
+
+! ! yellow
+! *.color3:       #cfb017
+! *.color11:      #cfb017
+
+! ! blue
+! *.color4:       #6684e1
+! *.color12:      #6684e1
+
+! ! magenta
+! *.color5:       #b854d4
+! *.color13:      #b854d4
+
+! ! cyan
+! *.color6:       #1fad83
+! *.color14:      #1fad83
+
+! ! white
+! *.color7:       #a6a28c
+! *.color15:      #dedbcb
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
+! Neon Colors
+! https://github.com/logico-dev/Xresources-themes/blob/master/xcolors-neon.Xresources
+
+! *background   : #171717
+! *foreground   : #F8F8F8
+! ! black
+! *color0     : #171717
+! *color8     : #38252C
+! ! red
+! *color1     : #D81765
+! *color9     : #FF0000
+! ! green
+! *color2     : #97D01A
+! *color10    : #76B639
+! ! yellow
+! *color3     : #FFA800
+! *color11    : #E1A126
+! ! blue
+! *color4     : #16B1FB
+! *color12    : #289CD5
+! ! magenta
+! *color5     : #FF2491
+! *color13    : #FF2491
+! ! cyan
+! *color6     : #0FDCB6
+! *color14    : #0A9B81
+! ! white
+! *color7     : #EBEBEB
+! *color15    : #F8F8F8
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
+!! Arc
+!! https://raw.githubusercontent.com/selloween/arc-theme-xresources/master/Xresources
+*.background: #383c4a
+*.foreground: #D2D2D2
+
+!black
+*color0: #383c4a
+*color8: #404552
+
+!red
+*color1: #9A4138
+*color9: #E7766B
+
+!green
+*color2: #4BEC90
+*color10: #3CBF75
+
+!yellow
+*color3: #D8D782
+*color11: #CFCD63
+
+!blue
+*color4: #5294e2
+*color12: #579CEF
+
+!magenta
+*color5: #CE50DD
+*color13: #E7766B
+
+!cyan
+*color6: #6BE5E7
+*color14: #90FDFF
+
+!white
+*color7: #CCCCCC
+*color15: #FFFFFF
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
+!! Grayscale Dark
+! ! special
+! *.foreground:   #b9b9b9
+! *.background:   #101010
+! *.cursorColor:  #b9b9b9
+
+! ! black
+! *.color0:       #101010
+! *.color8:       #525252
+
+! ! red
+! *.color1:       #7c7c7c
+! *.color9:       #7c7c7c
+
+! ! green
+! *.color2:       #8e8e8e
+! *.color10:      #8e8e8e
+
+! ! yellow
+! *.color3:       #a0a0a0
+! *.color11:      #a0a0a0
+
+! ! blue
+! *.color4:       #686868
+! *.color12:      #686868
+
+! ! magenta
+! *.color5:       #747474
+! *.color13:      #747474
+
+! ! cyan
+! *.color6:       #868686
+! *.color14:      #868686
+
+! ! white
+! *.color7:       #b9b9b9
+! *.color15:      #f7f7f7
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
+!xcalc*geometry: 300x375
+!XCalc*ShapeStyle: rectangle
 
 xcalc*title:				SuperCalc
-!! xcalc*font:				-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
-!! xcalc*font:				9x18
+!!xcalc*font:				-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
 xcalc*font:				-*-lucidatypewriter-bold-r-*-*-16-160-*-*-*-*-iso10646-1
-!! xcalc*font:				-*-lucida-bold-r-*-*-18-140-*-*-*-*-iso10646-1
-!!xcalc*faceName:				Ubuntu Mono
-!!xcalc*faceSize:				13
+xcalc.ti.bevel.screen.LCD.font:		-*-lucidatypewriter-*-r-*-*-25-180-*-*-*-*-iso10646-1
 
 xcalc*ti.button1.vertDistance:		4
 xcalc*ti.button2.vertDistance:		4
