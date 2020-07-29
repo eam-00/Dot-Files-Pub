@@ -576,8 +576,11 @@ xterm*on3Clicks:			line
 
 !! Arc
 !! https://raw.githubusercontent.com/selloween/arc-theme-xresources/master/Xresources
-*.background: #383c4a
-*.foreground: #D2D2D2
+!!*.background: #383c4a
+*.background: #383c44
+!!*.foreground: #D2D2D2
+!!*.foreground: #D2D2BB
+*.foreground: #D2D2DD
 
 !black
 *color0: #383c4a
@@ -596,7 +599,8 @@ xterm*on3Clicks:			line
 *color11: #CFCD63
 
 !blue
-*color4: #5294e2
+!!*color4: #5294e2
+*color4: #5294d2
 *color12: #579CEF
 
 !magenta
@@ -608,8 +612,10 @@ xterm*on3Clicks:			line
 *color14: #90FDFF
 
 !white
-*color7: #CCCCCC
-*color15: #FFFFFF
+!!*color7: #CCCCCC
+*color7: #CCCCEF
+!!*color15: #FFFFFF
+*color15: #FFFFEE
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
