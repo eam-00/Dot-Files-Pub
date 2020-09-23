@@ -1,6 +1,6 @@
-## ---------------------------------------
-## $HOME/.bashrc generic file for a server
-## ---------------------------------------
+## ------------------------------------------------------
+## $HOME/.bashrc file - A generic one for a server setup
+## ------------------------------------------------------
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -47,6 +47,7 @@ xterm*|rxvt*)
 esac
 
 ## ----------------------------------------------
+
 ## Alias ##
 alias ls='ls -CFp --color=auto'
 alias ll='ls -1 --color=auto'
