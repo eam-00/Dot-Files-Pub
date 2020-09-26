@@ -260,14 +260,13 @@ programs:								      \
 				testx11 -root				    \n\
 
 
-pointerPollTime:    0:00:05
-pointerHysteresis:  10
-windowCreationTimeout:0:00:30
-initialDelay:	0:00:00
-GetViewPortIsFullOfLies:False
-procInterrupts:	True
-xinputExtensionDev: False
-overlayStderr:	True
-authWarningSlack:   20
-
+pointerPollTime:		0:00:05
+pointerHysteresis:		10
+windowCreationTimeout:		0:00:30
+initialDelay:			0:00:00
+GetViewPortIsFullOfLies:	False
+procInterrupts:			True
+xinputExtensionDev:		False
+overlayStderr:			True
+authWarningSlack:		20
 
