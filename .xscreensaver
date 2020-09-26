@@ -6,9 +6,9 @@ timeout:	0:09:00
 cycle:		0:11:00
 lock:		True
 lockTimeout:	0:01:00
-passwdTimeout:	0:00:30
-visualID:	default
-installColormap:    True
+passwdTimeout:		0:00:30
+visualID:		default
+installColormap:	True
 verbose:	False
 timestamp:	True
 splash:		False
@@ -269,3 +269,5 @@ procInterrupts:	True
 xinputExtensionDev: False
 overlayStderr:	True
 authWarningSlack:   20
+
+
