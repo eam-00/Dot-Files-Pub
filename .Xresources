@@ -771,5 +771,39 @@ XClock*borderWidth : 0
 
 !! -----------------------------------------------
 
+xscreensaver.splash: false
+
+!font settings 9x15, the best fixed old school font in the Universe
+xscreensaver.Dialog.headingFont:        9x15
+xscreensaver.Dialog.bodyFont:           9x15
+xscreensaver.Dialog.labelFont:          9x15
+xscreensaver.Dialog.unameFont:          9x15
+xscreensaver.Dialog.buttonFont:         9x15
+xscreensaver.Dialog.dateFont:           9x15
+xscreensaver.passwd.passwdFont:         9x15
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground: #ffffff
+xscreensaver.Dialog.background: #111111
+xscreensaver.Dialog.topShadowColor: #111111
+xscreensaver.Dialog.bottomShadowColor: #111111
+xscreensaver.Dialog.Button.foreground: #666666
+xscreensaver.Dialog.Button.background: #ffffff
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground: #666666
+xscreensaver.Dialog.text.background: #ffffff
+xscreensaver.Dialog.internalBorderWidth:36
+xscreensaver.Dialog.borderWidth: 0
+xscreensaver.Dialog.shadowThickness: 2
+
+! Same color as the background so this "thermometer" dissapears...
+xscreensaver.passwd.thermometer.foreground: #111111
+xscreensaver.passwd.thermometer.background: #111111
+xscreensaver.passwd.thermometer.width: 2
+
+!datestamp format–see the strftime(3) manual page for details
+xscreensaver.dateFormat: %I:%M%P %a %b %d, %Y
+
 !! EoF !!
 
