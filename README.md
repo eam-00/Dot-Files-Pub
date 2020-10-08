@@ -7,4 +7,5 @@ My Xscreensaver setup ([larger image](Pics/DSCN0052.00.jpg)) that tries to add s
 Actually, the configuration file that sets up things the way they look is the [~/.Xresources](https://github.com/eam-00/Dot-Files-Pub/blob/master/.Xresources) one.
 
 ## ![LightDM](Pics/DSCN0086.thumb.jpg) LightDM
-The LightDM (X11 graphic login) [setup](https://github.com/eam-00/Dot-Files-Pub/blob/master/lightdm-gtk-greeter.conf) con Debian Stable ([larger image](Pics/DSCN0086.00.jpg))
+My current [LightDM](https://github.com/canonical/lightdm) [setup](https://github.com/eam-00/Dot-Files-Pub/blob/master/lightdm-gtk-greeter.conf) con Debian Stable ([larger image](Pics/DSCN0086.00.jpg)).  
+Nice and flat looking, at least IMHO.
