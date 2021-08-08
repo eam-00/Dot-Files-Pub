@@ -54,12 +54,12 @@ alias ll='ls -1 --color=auto'
 alias lsa='ls -lshap --color=auto'
 alias lst='ls -lshapt --color=auto'
 alias j='jobs'
-alias df="df -h"
+alias df='df -h'
 alias free='free -h'
-alias visudo="sudo /usr/sbin/visudo"
-alias chkconfig="sudo /sbin/chkconfig"
-alias service="sudo /sbin/service"
-alias ifconfig="/sbin/ifconfig"
+alias visudo='sudo /usr/sbin/visudo'
+alias chkconfig='sudo /sbin/chkconfig'
+alias service='sudo /sbin/service'
+alias ifconfig='/sbin/ifconfig'
 alias flush.postfix='sudo /usr/sbin/postfix flush'
 alias flush.sendmail='sudo /usr/lib/sendmail -q'
 alias delete.postfix.queue='sudo /usr/sbin/postsuper -d ALL'
