@@ -103,6 +103,12 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+## List the top 20 largest recursive subdirectories starting from the current location as the base path
+alias duk="du -k . 2>/dev/null \
+  |sort -nr \
+  |awk '{split('KB MB GB TB',v);s=1;while($1>1024){$1/=1024;s++}printf("%s\t%s\n",int($1+0.5)v[s],$2)}' \
+  |head -n20"
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
