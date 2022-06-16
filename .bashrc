@@ -103,6 +103,8 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+alias list-files-dir='find . -type f | cut -d/ -f2 | sort | uniq -c'
+
 ## List the top 20 largest recursive subdirectories starting from the current location as the base path
 alias duk="du -k . 2>/dev/null \
   |sort -nr \
