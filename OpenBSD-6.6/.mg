@@ -1,5 +1,5 @@
 ## --------------------------------------------
-## $HOME/.mg from Thinkpad T60 - OpenBSD 6.6
+## $HOME/.mg file
 ## https://en.wikipedia.org/wiki/Mg_(text_editor)
 ## --------------------------------------------
 
