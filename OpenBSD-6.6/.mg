@@ -7,6 +7,8 @@
 ## Also create /root/.mg.d/ and copy this file to /root/.mg
 
 backup-to-home-directory
+
+## Add this to be able to use Ctrl + H delete, even on the modeline
 global-set-key "\^h" delete-backward-char
 
 ## EOF ##
