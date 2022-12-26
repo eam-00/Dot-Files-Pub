@@ -78,4 +78,13 @@ set -o ignoreeof
 
 ## -----------------------------------------------
 
+function list_kernels () {
+if [ `awk -F= '$1=="ID" { print $2 ;}' /etc/os-release` == 'debian' ];
+then dpkg --get-selections | grep linux-image;
+else dpkg --get-selections | grep linux-headers && dpkg --get-selections | grep linux-image && dpkg --get-selections | grep linux-modules;
+fi
+}
+
+## -----------------------------------------------
+
 # EoF #
