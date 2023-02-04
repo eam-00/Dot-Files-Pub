@@ -1,7 +1,7 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! $HOME/.Xresources from Optiplex 755 - Debian Buster !!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Refresh config by running:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! $HOME/.Xresources from Optiplex 755 - Debian Bullseye !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Apply config by running:
 ! xrdb -merge ~/.Xresources
 ! xrdb ~/.Xresources
 
@@ -26,7 +26,7 @@ xterm*faceName:				CPMono_v07 Plain
 !!xterm*faceName:				ShareTechMono-Regular
 !!xterm*faceName:				Perfect DOS VGA 437
 
-xterm*faceSize:				10
+xterm*faceSize:				12
 xterm*renderFont:			true
 
 !!Xcursor.theme:				Google_Cursor
@@ -331,52 +331,52 @@ xterm*on3Clicks:			line
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! ! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
-! ! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
-! ! Project:    Nord XResources
-! ! Version:    0.1.0
-! ! Repository: https://github.com/arcticicestudio/nord-xresources
-! ! License:    MIT
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
 
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+! #define nord0 #2E3440
+! #define nord1 #3B4252
+! #define nord2 #434C5E
+! #define nord3 #4C566A
+! #define nord4 #D8DEE9
+! #define nord5 #E5E9F0
+! #define nord6 #ECEFF4
+! #define nord7 #8FBCBB
+! #define nord8 #88C0D0
+! #define nord9 #81A1C1
+! #define nord10 #5E81AC
+! #define nord11 #BF616A
+! #define nord12 #D08770
+! #define nord13 #EBCB8B
+! #define nord14 #A3BE8C
+! #define nord15 #B48EAD
 
-*.foreground:			nord4
-*.background:			nord0
-*.cursorColor:			nord4
-*fading:			35
-*fadeColor:			nord3
+! *.foreground:			nord4
+! *.background:			nord0
+! *.cursorColor:			nord4
+! *fading:			35
+! *fadeColor:			nord3
 
-*.color0:			nord1
-*.color1:			nord11
-*.color2:			nord14
-*.color3:			nord13
-*.color4:			nord9
-*.color5:			nord15
-*.color6:			nord8
-*.color7:			nord5
-*.color8:			nord3
-*.color9:			nord11
-*.color10:			nord14
-*.color11:			nord13
-*.color12:			nord9
-*.color13:			nord15
-*.color14:			nord7
-*.color15:			nord6
+! *.color0:			nord1
+! *.color1:			nord11
+! *.color2:			nord14
+! *.color3:			nord13
+! *.color4:			nord9
+! *.color5:			nord15
+! *.color6:			nord8
+! *.color7:			nord5
+! *.color8:			nord3
+! *.color9:			nord11
+! *.color10:			nord14
+! *.color11:			nord13
+! *.color12:			nord9
+! *.color13:			nord15
+! *.color14:			nord7
+! *.color15:			nord6
 
 ! ! ! -----------------------------------------------------------------------------
 ! ! ! -----------------------------------------------------------------------------
@@ -388,34 +388,34 @@ xterm*on3Clicks:			line
 ! ! https://github.com/morhetz/gruvbox-contrib/blob/master/xresources/gruvbox-dark.xresources
 ! ! -----------------------------------------------------------------------------
 
-! ! hard contrast: *background: #1d2021
-! *background: #282828
-! ! soft contrast: *background: #32302f
-! *foreground: #ebdbb2
-! ! Black + DarkGrey
-! *color0:  #282828
-! *color8:  #928374
-! ! DarkRed + Red
-! *color1:  #cc241d
-! *color9:  #fb4934
-! ! DarkGreen + Green
-! *color2:  #98971a
-! *color10: #b8bb26
-! ! DarkYellow + Yellow
-! *color3:  #d79921
-! *color11: #fabd2f
-! ! DarkBlue + Blue
-! *color4:  #458588
-! *color12: #83a598
-! ! DarkMagenta + Magenta
-! *color5:  #b16286
-! *color13: #d3869b
-! ! DarkCyan + Cyan
-! *color6:  #689d6a
-! *color14: #8ec07c
-! ! LightGrey + White
-! *color7:  #a89984
-! *color15: #ebdbb2
+! hard contrast: *background: #1d2021
+!*background: #282828
+! soft contrast: *background: #32302f
+!*foreground: #ebdbb2
+! Black + DarkGrey
+!*color0:  #282828
+!*color8:  #928374
+! DarkRed + Red
+!*color1:  #cc241d
+!*color9:  #fb4934
+! DarkGreen + Green
+!*color2:  #98971a
+!*color10: #b8bb26
+! DarkYellow + Yellow
+!*color3:  #d79921
+!*color11: #fabd2f
+! DarkBlue + Blue
+!*color4:  #458588
+!*color12: #83a598
+! DarkMagenta + Magenta
+!*color5:  #b16286
+!*color13: #d3869b
+! DarkCyan + Cyan
+!*color6:  #689d6a
+!*color14: #8ec07c
+! LightGrey + White
+!*color7:  #a89984
+!*color15: #ebdbb2
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -614,7 +614,7 @@ xterm*on3Clicks:			line
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
 
-!! Adapta
+! !! Adapta
 ! *.background: #F2F3F4
 ! *.foreground: #2E4053
 
@@ -694,6 +694,50 @@ xterm*on3Clicks:			line
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
 
+!! -----------------------------------------------
+!!
+!! Catppuccin Frappe
+!!
+! special
+*.background: #303446
+*.foreground: #C6D0F5
+*.cursorColor: #F2D5CF
+
+! black
+*.color0: #51576D
+*.color8: #626880
+
+! red
+*.color1: #E78284
+*.color9: #E78284
+
+! green
+*.color2: #A6D189
+*.color10: #A6D189
+
+! yellow
+*.color3: #E5C890
+*.color11: #E5C890
+
+! blue
+*.color4: #8CAAEE
+*.color12: #8CAAEE
+
+! magenta
+*.color5: #F4B8E4
+*.color13: #F4B8E4
+
+! cyan
+*.color6: #81C8BE
+*.color14: #81C8BE
+
+! white
+*.color7: #B5BFE2
+*.color15: #A5ADCE
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
 !xcalc*geometry: 300x375
 !XCalc*ShapeStyle: rectangle
 
@@ -768,6 +812,61 @@ XClock*height      : 12
 XClock*background  : dimgray
 XClock*foreground  : white
 XClock*borderWidth : 0
+
+!! -----------------------------------------------
+!!
+!! Catppuccin Frappe
+!!
+! special
+URxvt.background: #303446
+URxvt.foreground: #C6D0F5
+URxvt.cursorColor: #F2D5CF
+
+! black
+URxvt.color0: #51576D
+URxvt.color8: #626880
+
+! red
+URxvt.color1: #E78284
+URxvt.color9: #E78284
+
+! green
+URxvt.color2: #A6D189
+URxvt.color10: #A6D189
+
+! yellow
+URxvt.color3: #E5C890
+URxvt.color11: #E5C890
+
+! blue
+URxvt.color4: #8CAAEE
+URxvt.color12: #8CAAEE
+
+! magenta
+URxvt.color5: #F4B8E4
+URxvt.color13: #F4B8E4
+
+! cyan
+URxvt.color6: #81C8BE
+URxvt.color14: #81C8BE
+
+! white
+URxvt.color7: #B5BFE2
+URxvt.color15: #A5ADCE
+
+!! URxvt Appearance
+URxvt.font: xft:ubuntu mono:size=14
+URxvt.letterSpace: -1
+URxvt.lineSpace: -1
+URxvt.internalBorder: 4
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
 
 !! -----------------------------------------------
 
