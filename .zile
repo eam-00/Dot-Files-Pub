@@ -1,6 +1,6 @@
-;; -------------------------
-;; Default .zile config file
-;; -------------------------
+;; ---------------------------
+;; Default ~/.zile config file
+;; ---------------------------
 
 ;; Rebind keys with:
 ;; (global-set-key "key" 'func)
