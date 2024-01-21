@@ -22,6 +22,7 @@ alias update='apt update'
 alias upgrade='apt dist-upgrade'
 alias j='jobs'
 fix_wifi='systemctl stop wpa_supplicant.service && systemctl start wpa_supplicant.service && systemctl restart NetworkManager'
+alias batt='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"'
 
 function list_kernels () {
 if [ `awk -F= '$1=="ID" { print $2 ;}' /etc/os-release` == 'debian' ];
