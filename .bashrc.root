@@ -38,12 +38,11 @@ echo -e "--------------"
 uname -a
 }
 
-function info () {
-echo "Load:" "$(cat /proc/loadavg | awk '{print $1}')"
+function sysinfo () {
+echo -e "\tLoad:\t" "$(cat /proc/loadavg | awk '{print $1}')"
 cat /sys/class/thermal/thermal_zone0/temp > /tmp/cpu_temp
-echo -e "Temp:" "$((`cat /tmp/cpu_temp`/1000 ))"°""
-echo -e "RAM:" "$(free -m | awk 'NR==2{printf "RAM: %s/%sMB %.2f%%\n", $3,$2,$3*100/$2 }'| cut -d " " -f3)"
+echo -e "\tTemp:\t" "$((`cat /tmp/cpu_temp`/1000 ))"°""
+echo -e "\tRAM:\t" "$(free -m | awk 'NR==2{printf "RAM: %s/%sMB %.2f%%\n", $3,$2,$3*100/$2 }'| cut -d " " -f3)"
 }
-
 
 ## EOF ##
