@@ -60,7 +60,8 @@ xterm*highlightSelection:		true
 xterm*trimSelection:			true
 
 ! Lines of output that you can scroll back over
-xterm*saveLines:			4096
+## xterm*saveLines:                     4096
+xterm*saveLines:                        8192
 
 ! Do not scroll when there is new input e.g. tail -f /var/syslog
 xterm*scrollTtyOutput:			false
