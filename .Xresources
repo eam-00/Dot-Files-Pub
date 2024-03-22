@@ -38,6 +38,8 @@ xterm*cursorBlink:			True
 !!xterm*cursorColor:			Darkgrey
 !!xterm*cursorColor:			Orange
 
+XTerm*selectToClipboard:true
+
 xterm*VT10x0.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
