@@ -40,8 +40,9 @@ uname -a
 
 function sysinfo () {
 echo -e "\tLoad:\t" "$(cat /proc/loadavg | awk '{print $1}')"
-cat /sys/class/thermal/thermal_zone0/temp > /tmp/cpu_temp
+cat /sys/class/thermal/thermal_zone1/temp > /tmp/cpu_temp
 echo -e "\tTemp:\t" "$((`cat /tmp/cpu_temp`/1000 ))"°""
+echo -e "\tFan:\t" "$(cat /sys/devices/platform/applesmc.768/fan1_min)"
 echo -e "\tRAM:\t" "$(free -m | awk 'NR==2{printf "RAM: %s/%sMB %.2f%%\n", $3,$2,$3*100/$2 }'| cut -d " " -f3)"
 }
 
