@@ -40,12 +40,6 @@ xterm*cursorBlink:			True
 
 XTerm*selectToClipboard:true
 
-xterm*VT10x0.Translations: #override \
-    Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
-    Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
-
     Ctrl <Key> minus: smaller-vt-font() \n\
     Ctrl <Key> plus: larger-vt-font() \n\
     Ctrl <Key> 0: set-vt-font(d)
