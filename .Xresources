@@ -79,7 +79,7 @@ xterm*termName:				xterm-256color
 
 ! Clicking a line selects only from the current word forward
 !xterm*cutToBeginningOfLine:		false
-! and dont include a trailing newline in the selection
+! And dont include a trailing newline in the selection
 xterm*cutNewline:			false
 
 ! select word on two clicks
