@@ -87,8 +87,9 @@ xterm*on2Clicks:			word
 ! select whole line on three clicks
 !xterm*on3Clicks:			line
 
-! ! -----------------------------------------------------------------------------
-! ! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Themes:
+!! -----------------------------------------------------------------------------
 ! ! Zenburn
 ! ! https://sunaku.github.io/zenburn-terminal-color-scheme.html
 ! ! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
@@ -945,4 +946,4 @@ xscreensaver.passwd.thermometer.width: 2
 !datestamp format–see the strftime(3) manual page for details
 xscreensaver.dateFormat: %I:%M%P %a %b %d, %Y
 
-!! EoF !!
+!! EOF !!
