@@ -1,5 +1,5 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! $HOME/.Xresources from Optiplex 755 - Debian Bullseye !!
+!! $HOME/.Xresources from ht - Debian 12 Bookworm
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Apply config by running:
 ! xrdb -merge ~/.Xresources
@@ -22,9 +22,9 @@ Xft.hintstyle:				hintslight
 !! http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
 
 xterm*faceName:				CPMono_v07 Plain
-!!xterm*faceName:				Ubuntu Mono
-!!xterm*faceName:				ShareTechMono-Regular
-!!xterm*faceName:				Perfect DOS VGA 437
+!!xterm*faceName:			Ubuntu Mono
+!!xterm*faceName:			ShareTechMono-Regular
+!!xterm*faceName:			Perfect DOS VGA 437
 
 xterm*faceSize:				12
 xterm*renderFont:			true
@@ -33,10 +33,9 @@ xterm*renderFont:			true
 Xcursor.theme:				Adwaita
 xterm*cursorBlink:			True
 
-!!xterm*pointerColor:			White
-!!xterm*pointerColorBackground:		Black
-!!xterm*cursorColor:			Darkgrey
-!!xterm*cursorColor:			Orange
+xterm*pointerColor:			White
+xterm*pointerColorBackground:		Black
+xterm*cursorColor:			Orange
 
 XTerm*selectToClipboard:true
 
@@ -56,20 +55,13 @@ xterm*highlightSelection:		true
 xterm*trimSelection:			true
 
 ! Lines of output that you can scroll back over
-## xterm*saveLines:                     4096
-xterm*saveLines:                        8192
+xterm*saveLines:			10000
 
 ! Do not scroll when there is new input e.g. tail -f /var/syslog
 xterm*scrollTtyOutput:			false
 
-! pressing a key automatically scrolls to the bottom
+! Pressing a key automatically scrolls to the bottom
 xterm*scrollKey:			true
-
-! Doesnt work on Debian Sids xterm:
-!XTerm*alternateScroll:			true
-
-! Works on Debian Sids xterm:
-!xterm*VT100.alternateScroll:		true
 
 xterm*alternateScroll:			true
 xterm*multiScroll:			true
@@ -86,14 +78,14 @@ xterm*charClass:			33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 xterm*termName:				xterm-256color
 
 ! Clicking a line selects only from the current word forward
-! xterm*cutToBeginningOfLine:		false
+!xterm*cutToBeginningOfLine:		false
 ! and dont include a trailing newline in the selection
 xterm*cutNewline:			false
 
 ! select word on two clicks
 xterm*on2Clicks:			word
 ! select whole line on three clicks
-xterm*on3Clicks:			line
+!xterm*on3Clicks:			line
 
 ! ! -----------------------------------------------------------------------------
 ! ! -----------------------------------------------------------------------------
@@ -422,34 +414,34 @@ xterm*on3Clicks:			line
 ! Source: https://github.com/morhetz/gruvbox-generalized
 ! Last Modified: 6 Sep 2014
 ! -----------------------------------------------------------------------------
-! ! hard contrast: *background: #f9f5d7
-! *background: #fbf1c7
-! ! soft contrast: *background: #f2e5bc
-! *foreground: #3c3836
-! ! Black + DarkGrey
-! *color0:  #fdf4c1
-! *color8:  #928374
-! ! DarkRed + Red
-! *color1:  #cc241d
-! *color9:  #9d0006
-! ! DarkGreen + Green
-! *color2:  #98971a
-! *color10: #79740e
-! ! DarkYellow + Yellow
-! *color3:  #d79921
-! *color11: #b57614
-! ! DarkBlue + Blue
-! *color4:  #458588
-! *color12: #076678
-! ! DarkMagenta + Magenta
-! *color5:  #b16286
-! *color13: #8f3f71
-! ! DarkCyan + Cyan
-! *color6:  #689d6a
-! *color14: #427b58
-! ! LightGrey + White
-! *color7:  #7c6f64
-! *color15: #3c3836
+!! hard contrast: *background: #f9f5d7
+!*background: #fbf1c7
+!! soft contrast: *background: #f2e5bc
+!*foreground: #3c3836
+!! Black + DarkGrey
+!*color0:  #fdf4c1
+!*color8:  #928374
+!! DarkRed + Red
+!*color1:  #cc241d
+!*color9:  #9d0006
+!! DarkGreen + Green
+!*color2:  #98971a
+!*color10: #79740e
+!! DarkYellow + Yellow
+!*color3:  #d79921
+!*color11: #b57614
+!! DarkBlue + Blue
+!*color4:  #458588
+!*color12: #076678
+!! DarkMagenta + Magenta
+!*color5:  #b16286
+!*color13: #8f3f71
+!! DarkCyan + Cyan
+!*color6:  #689d6a
+!*color14: #427b58
+!! LightGrey + White
+!*color7:  #7c6f64
+!*color15: #3c3836
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -543,28 +535,36 @@ xterm*on3Clicks:			line
 
 ! *background   : #171717
 ! *foreground   : #F8F8F8
-! ! black
+
+!! Black
 ! *color0     : #171717
 ! *color8     : #38252C
-! ! red
+
+!! Red
 ! *color1     : #D81765
 ! *color9     : #FF0000
-! ! green
+
+!! green
 ! *color2     : #97D01A
 ! *color10    : #76B639
-! ! yellow
+
+!! yellow
 ! *color3     : #FFA800
 ! *color11    : #E1A126
-! ! blue
+
+!! blue
 ! *color4     : #16B1FB
 ! *color12    : #289CD5
-! ! magenta
+
+!! magenta
 ! *color5     : #FF2491
 ! *color13    : #FF2491
-! ! cyan
+
+!! cyan
 ! *color6     : #0FDCB6
 ! *color14    : #0A9B81
-! ! white
+
+!! white
 ! *color7     : #EBEBEB
 ! *color15    : #F8F8F8
 
@@ -573,6 +573,7 @@ xterm*on3Clicks:			line
 
 !! Arc
 !! https://raw.githubusercontent.com/selloween/arc-theme-xresources/master/Xresources
+
 ! *.background: #383c44
 ! *.foreground: #D2D2DD
 
@@ -691,46 +692,89 @@ xterm*on3Clicks:			line
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
 
-!! -----------------------------------------------
-!!
+! -----------------------------------------------------------------------------
 !! Catppuccin Frappe
-!!
+! -----------------------------------------------------------------------------
+
 ! special
-*.background: #303446
-*.foreground: #C6D0F5
-*.cursorColor: #F2D5CF
+!!*.background: #303446
+!!*.foreground: #C6D0F5
+!!*.cursorColor: #F2D5CF
 
 ! black
-*.color0: #51576D
-*.color8: #626880
+!!*.color0: #51576D
+!!*.color8: #626880
 
 ! red
-*.color1: #E78284
-*.color9: #E78284
+!!*.color1: #E78284
+!!*.color9: #E78284
 
 ! green
-*.color2: #A6D189
-*.color10: #A6D189
+!!*.color2: #A6D189
+!!*.color10: #A6D189
 
 ! yellow
-*.color3: #E5C890
-*.color11: #E5C890
+!!*.color3: #E5C890
+!!*.color11: #E5C890
 
 ! blue
-*.color4: #8CAAEE
-*.color12: #8CAAEE
+!!*.color4: #8CAAEE
+!!*.color12: #8CAAEE
 
 ! magenta
-*.color5: #F4B8E4
-*.color13: #F4B8E4
+!!*.color5: #F4B8E4
+!!*.color13: #F4B8E4
 
 ! cyan
-*.color6: #81C8BE
-*.color14: #81C8BE
+!!*.color6: #81C8BE
+!!*.color14: #81C8BE
 
 ! white
-*.color7: #B5BFE2
-*.color15: #A5ADCE
+!!*.color7: #B5BFE2
+!!*.color15: #A5ADCE
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
+! -----------------------------------------------------------------------------
+!! Catppuccin Latte
+!! https://github.com/catppuccin/xresources?tab=readme-ov-file
+! -----------------------------------------------------------------------------
+
+*background: #EFF1F5
+*foreground: #4C4F69
+
+! black
+*color0: #5C5F77
+*color8: #6C6F85
+
+! red
+*color1: #D20F39
+*color9: #D20F39
+
+! green
+*color2: #40A02B
+*color10: #40A02B
+
+! yellow
+*color3: #DF8E1D
+*color11: #DF8E1D
+
+! blue
+*color4: #1E66F5
+*color12: #1E66F5
+
+! magenta
+*color5: #EA76CB
+*color13: #EA76CB
+
+! cyan
+*color6: #179299
+*color14: #179299
+
+! white
+*color7: #ACB0BE
+*color15: #BCC0CC
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -902,4 +946,3 @@ xscreensaver.passwd.thermometer.width: 2
 xscreensaver.dateFormat: %I:%M%P %a %b %d, %Y
 
 !! EoF !!
-
