@@ -85,8 +85,8 @@ xterm*charClass:			33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 !! Xterm Colors
 xterm*termName:				xterm-256color
 
-! clicking a line selects only from the current word forward
-xterm*cutToBeginningOfLine:		false
+! Clicking a line selects only from the current word forward
+! xterm*cutToBeginningOfLine:		false
 ! and dont include a trailing newline in the selection
 xterm*cutNewline:			false
 
