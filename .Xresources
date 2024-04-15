@@ -29,7 +29,7 @@ xterm*faceName:				CPMono_v07 Plain
 xterm*faceSize:				12
 xterm*renderFont:			true
 
-!!Xcursor.theme:				Google_Cursor
+!!Xcursor.theme:			Google_Cursor
 Xcursor.theme:				Adwaita
 xterm*cursorBlink:			True
 
@@ -45,16 +45,16 @@ XTerm*selectToClipboard:true
 
 *VT100.translations:#override\n<Key>F12:set-reverse-video(toggle)
 
-! Remove the additional black border
+!! Remove the additional black border
 XTerm*borderWidth:			0
 XTerm*internalBorder:			0
 
-! Only select text
+!! Only select text
 xterm*highlightSelection:		true
-! Remove trailing spaces
+!! Remove trailing spaces
 xterm*trimSelection:			true
 
-! Lines of output that you can scroll back over
+!! Lines of output that you can scroll back over
 xterm*saveLines:			10000
 
 ! Do not scroll when there is new input e.g. tail -f /var/syslog
@@ -90,7 +90,7 @@ xterm*on2Clicks:			word
 !! -----------------------------------------------------------------------------
 !! Themes:
 !! -----------------------------------------------------------------------------
-! ! Zenburn
+!! Zenburn
 ! ! https://sunaku.github.io/zenburn-terminal-color-scheme.html
 ! ! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
 ! !BLK Cursor
@@ -211,64 +211,65 @@ xterm*on2Clicks:			word
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! ! Solarized Light
-! ! https://github.com/solarized/xresources/blob/master/Xresources.light
-! #define S_base03        #002b36
-! #define S_base02        #073642
-! #define S_base01        #586e75
-! #define S_base00        #657b83
-! #define S_base0         #839496
-! #define S_base1         #93a1a1
-! #define S_base2         #eee8d5
-! #define S_base3         #fdf6e3
+!! Solarized Light
+!! https://github.com/solarized/xresources/blob/master/Xresources.light
+ 
+!#define S_base03        #002b36
+!#define S_base02        #073642
+!#define S_base01        #586e75
+!#define S_base00        #657b83
+!#define S_base0         #839496
+!#define S_base1         #93a1a1
+!#define S_base2         #eee8d5
+!#define S_base3         #fdf6e3
 
-! *background:            S_base3
-! *foreground:            S_base00
-! *fadeColor:             S_base3
-! *cursorColor:           S_base01
-! *pointerColorBackground:S_base1
-! *pointerColorForeground:S_base01
+!*background:            S_base3
+!*foreground:            S_base00
+!*fadeColor:             S_base3
+!*cursorColor:           S_base01
+!*pointerColorBackground:S_base1
+!*pointerColorForeground:S_base01
 
-! #define S_yellow        #b58900
-! #define S_orange        #cb4b16
-! #define S_red           #dc322f
-! #define S_magenta       #d33682
-! #define S_violet        #6c71c4
-! #define S_blue          #268bd2
-! #define S_cyan          #2aa198
-! #define S_green         #859900
+!#define S_yellow        #b58900
+!#define S_orange        #cb4b16
+!#define S_red           #dc322f
+!#define S_magenta       #d33682
+!#define S_violet        #6c71c4
+!#define S_blue          #268bd2
+!#define S_cyan          #2aa198
+!#define S_green         #859900
 
-! !! black dark/light
-! *color0:                S_base02
-! *color8:                S_base03
+!! black dark/light
+!*color0:                S_base02
+!*color8:                S_base03
 
-! !! red dark/light
-! *color1:                S_red
-! *color9:                S_orange
+!! red dark/light
+!*color1:                S_red
+!*color9:                S_orange
 
-! !! green dark/light
-! *color2:                S_green
-! *color10:               S_base01
+!! green dark/light
+!*color2:                S_green
+!*color10:               S_base01
 
-! !! yellow dark/light
-! *color3:                S_yellow
-! *color11:               S_base00
+!! yellow dark/light
+!*color3:                S_yellow
+!*color11:               S_base00
 
-! !! blue dark/light
-! *color4:                S_blue
-! *color12:               S_base0
+!! blue dark/light
+!*color4:                S_blue
+!*color12:               S_base0
 
-! !! magenta dark/light
-! *color5:                S_magenta
-! *color13:               S_violet
+!! magenta dark/light
+!*color5:                S_magenta
+!*color13:               S_violet
 
-! !! cyan dark/light
-! *color6:                S_cyan
-! *color14:               S_base1
+!! cyan dark/light
+!*color6:                S_cyan
+!*color14:               S_base1
 
-! !! white dark/light
-! *color7:                S_base2
-! *color15:               S_base3
+!! white dark/light
+!*color7:                S_base2
+!*color15:               S_base3
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -698,41 +699,41 @@ xterm*on2Clicks:			word
 ! -----------------------------------------------------------------------------
 
 ! special
-!!*.background: #303446
-!!*.foreground: #C6D0F5
-!!*.cursorColor: #F2D5CF
+*.background: #303446
+*.foreground: #C6D0F5
+*.cursorColor: #F2D5CF
 
 ! black
-!!*.color0: #51576D
-!!*.color8: #626880
+*.color0: #51576D
+*.color8: #626880
 
 ! red
-!!*.color1: #E78284
-!!*.color9: #E78284
+*.color1: #E78284
+*.color9: #E78284
 
 ! green
-!!*.color2: #A6D189
-!!*.color10: #A6D189
+*.color2: #A6D189
+*.color10: #A6D189
 
 ! yellow
-!!*.color3: #E5C890
-!!*.color11: #E5C890
+*.color3: #E5C890
+*.color11: #E5C890
 
 ! blue
-!!*.color4: #8CAAEE
-!!*.color12: #8CAAEE
+*.color4: #8CAAEE
+*.color12: #8CAAEE
 
 ! magenta
-!!*.color5: #F4B8E4
-!!*.color13: #F4B8E4
+*.color5: #F4B8E4
+*.color13: #F4B8E4
 
 ! cyan
-!!*.color6: #81C8BE
-!!*.color14: #81C8BE
+*.color6: #81C8BE
+*.color14: #81C8BE
 
 ! white
-!!*.color7: #B5BFE2
-!!*.color15: #A5ADCE
+*.color7: #B5BFE2
+*.color15: #A5ADCE
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -742,40 +743,40 @@ xterm*on2Clicks:			word
 !! https://github.com/catppuccin/xresources?tab=readme-ov-file
 ! -----------------------------------------------------------------------------
 
-*background: #EFF1F5
-*foreground: #4C4F69
+!*background: #EFF1F5
+!*foreground: #4C4F69
 
 ! black
-*color0: #5C5F77
-*color8: #6C6F85
+!*color0: #5C5F77
+!*color8: #6C6F85
 
 ! red
-*color1: #D20F39
-*color9: #D20F39
+!*color1: #D20F39
+!*color9: #D20F39
 
 ! green
-*color2: #40A02B
-*color10: #40A02B
+!*color2: #40A02B
+!*color10: #40A02B
 
 ! yellow
-*color3: #DF8E1D
-*color11: #DF8E1D
+!*color3: #DF8E1D
+!*color11: #DF8E1D
 
 ! blue
-*color4: #1E66F5
-*color12: #1E66F5
+!*color4: #1E66F5
+!*color12: #1E66F5
 
 ! magenta
-*color5: #EA76CB
-*color13: #EA76CB
+!*color5: #EA76CB
+!*color13: #EA76CB
 
 ! cyan
-*color6: #179299
-*color14: #179299
+!*color6: #179299
+!*color14: #179299
 
 ! white
-*color7: #ACB0BE
-*color15: #BCC0CC
+!*color7: #ACB0BE
+!*color15: #BCC0CC
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
