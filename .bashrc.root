@@ -30,6 +30,7 @@ echo -e "Installed Kernels: "
 echo -e "-----------------"
 if [ `awk -F= '$1=="ID" { print $2 ;}' /etc/os-release` == 'debian' ];
 then dpkg --list | grep linux-image && dpkg --list | grep linux-headers && dpkg --list | grep linux-modules;
+## then dpkg --get-selections | grep linux-image;
 else dpkg --get-selections | grep linux-headers && dpkg --get-selections | grep linux-image && dpkg --get-selections | grep linux-modules;
 fi
 echo -e "--------------"
