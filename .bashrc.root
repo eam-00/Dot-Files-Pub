@@ -23,6 +23,7 @@ alias upgrade='apt dist-upgrade'
 alias j='jobs'
 fix_wifi='systemctl stop wpa_supplicant.service && systemctl start wpa_supplicant.service && systemctl restart NetworkManager'
 alias batt='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"'
+alias set_date='echo "date 062813532024 && /sbin/hwclock -w"'
 
 function list_kernels () {
 echo -e "-----------------"
