@@ -27,18 +27,22 @@ alias set_date='echo "date 062813532024 && /sbin/hwclock -w"'
 
 function list_kernels () {
 echo -e "-----------------"
+echo -e "Installed Headers: "
+echo -e "-----------------"
+dpkg --list | grep linux-headers
+echo -e "-----------------"
+echo -e "Installed Modules: "
+echo -e "-----------------"
+dpkg --list | grep linux-modules
+echo -e "-----------------"
 echo -e "Installed Kernels: "
 echo -e "-----------------"
-if [ `awk -F= '$1=="ID" { print $2 ;}' /etc/os-release` == 'debian' ];
-then dpkg --list | grep linux-image && dpkg --list | grep linux-headers && dpkg --list | grep linux-modules;
-else dpkg --get-selections | grep linux-headers && dpkg --get-selections | grep linux-image && dpkg --get-selections | grep linux-modules;
-fi
+dpkg --list | grep linux-image
 echo -e "--------------"
 echo -e "Running Kernel: "
 echo -e "--------------"
 uname -a
 }
-
 
 function sysinfo () {
 echo -e "\tLoad:\t" "$(cat /proc/loadavg | awk '{print $1}')"
