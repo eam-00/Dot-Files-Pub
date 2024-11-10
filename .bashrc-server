@@ -94,4 +94,17 @@ uname -a
 
 ## -----------------------------------------------
 
+function show_set_date () {
+
+echo -e "     Hour"
+echo -e "     | Minutes"
+echo -e "     | | Day"
+echo -e "     | | | Month"
+echo -e "     | | | | Year"
+echo -e "     | | | | |	"	
+echo -e "date 051916092024 && /sbin/hwclock -w"
+echo -e "-------------------------------------"
+
+}
+
 # EoF #
