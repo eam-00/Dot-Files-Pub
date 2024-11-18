@@ -98,7 +98,7 @@ function show_set_date () {
 
 echo -e "     Month"
 echo -e "     | Day"
-echo -e "     | | Day"
+echo -e "     | | Hour"
 echo -e "     | | | Month"
 echo -e "     | | | | Year"
 echo -e "     | | | | |	"	
