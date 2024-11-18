@@ -96,7 +96,7 @@ uname -a
 
 function show_set_date () {
 
-echo -e "     Hour"
+echo -e "     Month"
 echo -e "     | Minutes"
 echo -e "     | | Day"
 echo -e "     | | | Month"
