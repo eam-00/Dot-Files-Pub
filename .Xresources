@@ -1,6 +1,6 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! $HOME/.Xresources - Optiplex 755 - Devuan Excalibur !!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! $HOME/.Xresources - x220i - Devuan Excalibur !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Refresh config by running:
 ! xrdb -merge ~/.Xresources
 ! xrdb ~/.Xresources
@@ -29,7 +29,8 @@ xterm*faceName:                         Ubuntu Mono
 xterm*faceSize:				12
 xterm*renderFont:			true
 
-Xcursor.theme:				Google_Cursor
+Xcursor.theme:				my_breeze_cursors
+!!Xcursor.theme:				Google_Cursor
 !!Xcursor.theme:				Adwaita
 xterm*cursorBlink:			True
 
@@ -50,28 +51,28 @@ xterm*VT10x0.Translations: #override \
 
 *VT100.translations:#override\n<Key>F12:set-reverse-video(toggle)
 
-! Remove the additional black border
+!! Remove the additional black border
 XTerm*borderWidth:			0
 XTerm*internalBorder:			0
 
-! Only select text
+!! Only select text
 xterm*highlightSelection:		true
-! Remove trailing spaces
+!! Remove trailing spaces
 xterm*trimSelection:			true
 
-! Lines of output that you can scroll back over
+!! Lines of output that you can scroll back over
 xterm*saveLines:			4096
 
-! Do not scroll when there is new input e.g. tail -f /var/syslog
+!! Do not scroll when there is new input e.g. tail -f /var/syslog
 xterm*scrollTtyOutput:			false
 
-! pressing a key automatically scrolls to the bottom
+!! Pressing a key automatically scrolls to the bottom
 xterm*scrollKey:			true
 
-! Doesnt work on Debian Sids xterm:
+!! Doesnt work on Debian Sids xterm:
 !XTerm*alternateScroll:			true
 
-! Works on Debian Sids xterm:
+!! Works on Debian Sids xterm:
 !xterm*VT100.alternateScroll:		true
 
 xterm*alternateScroll:			true
@@ -98,11 +99,11 @@ xterm*on2Clicks:			word
 ! select whole line on three clicks
 xterm*on3Clicks:			line
 
-! ! -----------------------------------------------------------------------------
-! ! -----------------------------------------------------------------------------
-! ! Zenburn
-! ! https://sunaku.github.io/zenburn-terminal-color-scheme.html
-! ! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Zenburn
+!! https://sunaku.github.io/zenburn-terminal-color-scheme.html
+!! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
 ! !BLK Cursor
 ! #define _color0        #000d18
 ! #define _color8        #000d18
@@ -338,48 +339,48 @@ xterm*on3Clicks:			line
 ! Repository: https://github.com/arcticicestudio/nord-xresources
 ! License:    MIT
 
-!!#define nord0 #2E3440
-!!#define nord1 #3B4252
-!!#define nord2 #434C5E
-!!#define nord3 #4C566A
-!!#define nord4 #D8DEE9
-!!#define nord5 #E5E9F0
-!!#define nord6 #ECEFF4
-!!#define nord7 #8FBCBB
-!!#define nord8 #88C0D0
-!!#define nord9 #81A1C1
-!!#define nord10 #5E81AC
-!!#define nord11 #BF616A
-!!#define nord12 #D08770
-!!#define nord13 #EBCB8B
-!!#define nord14 #A3BE8C
-!!#define nord15 #B48EAD
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-!!*.foreground:			nord4
-!!*.background:			nord0
-!!*.cursorColor:			nord4
-!!*fading:			35
-!!*fadeColor:			nord3
+*.foreground:			nord4
+*.background:			nord0
+*.cursorColor:			nord4
+*fading:			35
+*fadeColor:			nord3
 
-!!*.color0:			nord1
-!!*.color1:			nord11
-!!*.color2:			nord14
-!!*.color3:			nord13
-!!*.color4:			nord9
-!!*.color5:			nord15
-!!*.color6:			nord8
-!!*.color7:			nord5
-!!*.color8:			nord3
-!!*.color9:			nord11
-!!*.color10:			nord14
-!!*.color11:			nord13
-!!*.color12:			nord9
-!!*.color13:			nord15
-!!*.color14:			nord7
-!!*.color15:			nord6
+*.color0:			nord1
+*.color1:			nord11
+*.color2:			nord14
+*.color3:			nord13
+*.color4:			nord9
+*.color5:			nord15
+*.color6:			nord8
+*.color7:			nord5
+*.color8:			nord3
+*.color9:			nord11
+*.color10:			nord14
+*.color11:			nord13
+*.color12:			nord9
+*.color13:			nord15
+*.color14:			nord7
+*.color15:			nord6
 
-! ! ! -----------------------------------------------------------------------------
-! ! ! -----------------------------------------------------------------------------
+! ! -----------------------------------------------------------------------------
+! ! -----------------------------------------------------------------------------
 ! ! File: gruvbox-dark.xresources
 ! ! Description: Retro groove colorscheme generalized
 ! ! Author: morhetz <morhetz@gmail.com>
@@ -387,35 +388,45 @@ xterm*on3Clicks:			line
 ! ! Last Modified: 6 Sep 2014
 ! ! https://github.com/morhetz/gruvbox-contrib/blob/master/xresources/gruvbox-dark.xresources
 ! ! -----------------------------------------------------------------------------
+! ! -----------------------------------------------------------------------------
 
 ! hard contrast: *background: #1d2021
-*background: #282828
+!! *background: #282828
+
 ! soft contrast: *background: #32302f
-*foreground: #ebdbb2
+!! *foreground: #ebdbb2
+
 ! Black + DarkGrey
-*color0:  #282828
-*color8:  #928374
+!! *color0:  #282828
+!! *color8:  #928374
+
 ! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
+!! *color1:  #cc241d
+!! *color9:  #fb4934
+
 ! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
+!! *color2:  #98971a
+!! *color10: #b8bb26
+
 ! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
+!! *color3:  #d79921
+!! *color11: #fabd2f
+
 ! DarkBlue + Blue
-*color4:  #458588
-*color12: #83a598
+!! *color4:  #458588
+!! *color12: #83a598
+
 ! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
+!! *color5:  #b16286
+!! *color13: #d3869b
+
 ! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
+!! *color6:  #689d6a
+!! *color14: #8ec07c
+
 ! LightGrey + White
-*color7:  #a89984
-*color15: #ebdbb2
+!! *color7:  #a89984
+!! *color15: #ebdbb2
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -425,58 +436,65 @@ xterm*on3Clicks:			line
 ! Source: https://github.com/morhetz/gruvbox-generalized
 ! Last Modified: 6 Sep 2014
 ! -----------------------------------------------------------------------------
-! ! hard contrast: *background: #f9f5d7
+!! hard contrast: *background: #f9f5d7
 ! *background: #fbf1c7
-! ! soft contrast: *background: #f2e5bc
+!! soft contrast: *background: #f2e5bc
 ! *foreground: #3c3836
-! ! Black + DarkGrey
+!! Black + DarkGrey
 ! *color0:  #fdf4c1
 ! *color8:  #928374
-! ! DarkRed + Red
+
+!! DarkRed + Red
 ! *color1:  #cc241d
 ! *color9:  #9d0006
-! ! DarkGreen + Green
+
+!! DarkGreen + Green
 ! *color2:  #98971a
 ! *color10: #79740e
-! ! DarkYellow + Yellow
+
+!! DarkYellow + Yellow
 ! *color3:  #d79921
 ! *color11: #b57614
-! ! DarkBlue + Blue
+
+!! DarkBlue + Blue
 ! *color4:  #458588
 ! *color12: #076678
-! ! DarkMagenta + Magenta
+
+!! DarkMagenta + Magenta
 ! *color5:  #b16286
 ! *color13: #8f3f71
-! ! DarkCyan + Cyan
+
+!! DarkCyan + Cyan
 ! *color6:  #689d6a
 ! *color14: #427b58
-! ! LightGrey + White
+
+!! LightGrey + White
 ! *color7:  #7c6f64
 ! *color15: #3c3836
 
-! -----------------------------------------------------------------------------
-! -----------------------------------------------------------------------------
-! !! Mocha Dark
-! !! https://terminal.sexy/
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Mocha Dark
+!! https://terminal.sexy/
 
-! ! special
+!! Special
 ! *.foreground:   #8a8986
 ! *.background:   #28211c
 ! *.cursorColor:  #8a8986
 
-! ! black
+!! Black
 ! *.color0:       #28211c
 ! *.color8:       #666666
 
-! ! red
+!! red
 ! *.color1:       #cf6a4c
 ! *.color9:       #cf6a4c
 
-! ! green
+!! green
 ! *.color2:       #54be0d
 ! *.color10:      #54be0d
 
-! ! yellow
+!! yellow
 ! *.color3:       #f9ee98
 ! *.color11:      #f9ee98
 
@@ -498,9 +516,8 @@ xterm*on3Clicks:			line
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-
-! !! My Dark Pastel
-! !! https://terminal.sexy/
+!! My Dark Pastel
+!! https://terminal.sexy/
 ! ! special
 ! *.foreground:   #d1ccb0
 ! *.background:   #474343
@@ -540,19 +557,21 @@ xterm*on3Clicks:			line
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-
 ! Neon Colors
 ! https://github.com/logico-dev/Xresources-themes/blob/master/xcolors-neon.Xresources
 
 ! *background   : #171717
 ! *foreground   : #F8F8F8
-! ! black
+
+!! black
 ! *color0     : #171717
 ! *color8     : #38252C
-! ! red
+
+!! red
 ! *color1     : #D81765
 ! *color9     : #FF0000
-! ! green
+
+!! green
 ! *color2     : #97D01A
 ! *color10    : #76B639
 ! ! yellow
