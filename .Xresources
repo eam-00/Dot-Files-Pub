@@ -6,7 +6,6 @@
 ! xrdb ~/.Xresources
 
 !! -----------------------------------------------
-!! -----------------------------------------------
 
 !! Xft
 !! https://github.com/vonbrownie/dotfiles/blob/master/.Xresources
@@ -21,23 +20,22 @@ Xft.hintstyle:				hintslight
 !! XTerm
 !! http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
 
-xterm*faceName:                         Ubuntu Mono
-!!xterm*faceName:				CPMono_v07 Plain
-!!xterm*faceName:				ShareTechMono-Regular
-!!xterm*faceName:				Perfect DOS VGA 437
+!!xterm*faceName:		Ubuntu Mono
+!!xterm*faceName:		CPMono_v07 Plain
+xterm*faceName:			ShareTechMono-Regular
+!!xterm*faceName:		Perfect DOS VGA 437
 
-xterm*faceSize:				12
-xterm*renderFont:			true
+xterm*faceSize:			12
+xterm*renderFont:		true
 
-Xcursor.theme:				my_breeze_cursors
-!!Xcursor.theme:				Google_Cursor
-!!Xcursor.theme:				Adwaita
-xterm*cursorBlink:			True
+Xcursor.theme:			my_breeze_cursors
+!!Xcursor.theme:		Google_Cursor
+!!Xcursor.theme:		Adwaita
 
-!!xterm*pointerColor:			White
-!!xterm*pointerColorBackground:		Black
-!!xterm*cursorColor:			Darkgrey
-xterm*cursorColor:			Orange
+xterm*cursorBlink:		True
+xterm*pointerColor:		White
+xterm*pointerColorBackground:	Black
+xterm*cursorColor:		Orange
 
 xterm*VT10x0.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
@@ -50,6 +48,18 @@ xterm*VT10x0.Translations: #override \
     Ctrl <Key> 0: set-vt-font(d)
 
 *VT100.translations:#override\n<Key>F12:set-reverse-video(toggle)
+
+!! -----------------------------------------------
+!! https://wiki.archlinux.org/title/Rxvt-unicode
+
+URxvt.print-pipe: cat > ~/Downloads/URxvt_$(date '+%Y-%m-%d_%H:%M:%S').txt
+URxvt.scrollTtyOutput:		False
+URxvt.scrollWithBuffer:		True
+URxvt.scrollTtyKeypress:	True
+URxvt.secondaryScroll:		False
+URxvt.secondaryWheel:		True
+
+!! -----------------------------------------------
 
 !! Remove the additional black border
 XTerm*borderWidth:			0
@@ -84,7 +94,7 @@ xterm*fastScroll:			true
 !! XTerm*VT100*titeInhibit:             true
 !! https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html
 xterm*charClass:			33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
-!XTerm*on3Clicks:                       regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+!!XTerm*on3Clicks:                       regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
 
 !! Xterm Colors
 xterm*termName:				xterm-256color
