@@ -1,6 +1,6 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! $HOME/.Xresources - x220i - Devuan Excalibur !!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! $HOME/.Xresources - t420 - OpenBSD 7.8
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Refresh config by running:
 ! xrdb -merge ~/.Xresources
 ! xrdb ~/.Xresources
@@ -15,27 +15,41 @@ Xft.rgba:				rgb
 Xft.hinting:				true
 Xft.hintstyle:				hintslight
 
-!! -----------------------------------------------
+!! -----------------------------------------------------------------------------
+
+!! xidle
+! drag pointer to lower left corner to lock screen
+XIdle*position : sw
+! and leave it there for one second.
+XIdle*delay    : 1
+! also lock screen after 5 minutes idle
+XIdle*timeout  : 300
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
 
 !! XTerm
 !! http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
 
+xterm*faceName:			AdwaitaMono-Regular
 !!xterm*faceName:		Ubuntu Mono
 !!xterm*faceName:		CPMono_v07 Plain
-xterm*faceName:			ShareTechMono-Regular
+!!xterm*faceName:		ShareTechMono-Regular
 !!xterm*faceName:		Perfect DOS VGA 437
 
-xterm*faceSize:			12
+xterm*faceSize:			10
 xterm*renderFont:		true
 
-Xcursor.theme:			my_breeze_cursors
+!!Xcursor.theme:		left_prt
+!!Xcursor.theme:		my_breeze_cursors
 !!Xcursor.theme:		Google_Cursor
-!!Xcursor.theme:		Adwaita
+!!Xcursor.theme:		my-Adwaita
 
 xterm*cursorBlink:		True
 xterm*pointerColor:		White
 xterm*pointerColorBackground:	Black
 xterm*cursorColor:		Orange
+XTerm*pointerShape:		left_ptr
 
 xterm*VT10x0.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
@@ -52,14 +66,17 @@ xterm*VT10x0.Translations: #override \
 !! -----------------------------------------------
 !! https://wiki.archlinux.org/title/Rxvt-unicode
 
-URxvt.print-pipe: cat > ~/Downloads/URxvt_$(date '+%Y-%m-%d_%H:%M:%S').txt
-URxvt.scrollTtyOutput:		False
-URxvt.scrollWithBuffer:		True
-URxvt.scrollTtyKeypress:	True
-URxvt.secondaryScroll:		False
-URxvt.secondaryWheel:		True
+!!URxvt.print-pipe: cat > ~/Downloads/URxvt_$(date '+%Y-%m-%d_%H:%M:%S').txt
+!!URxvt.scrollTtyOutput:		False
+!!URxvt.scrollWithBuffer:		True
+!!URxvt.scrollTtyKeypress:	True
+!!URxvt.secondaryScroll:		False
+!!URxvt.secondaryWheel:		True
 
 !! -----------------------------------------------
+
+!! Scrollbars disabled
+XTerm*scrollBar:			False
 
 !! Remove the additional black border
 XTerm*borderWidth:			0
@@ -78,9 +95,6 @@ xterm*scrollTtyOutput:			false
 
 !! Pressing a key automatically scrolls to the bottom
 xterm*scrollKey:			true
-
-!! Doesnt work on Debian Sids xterm:
-!XTerm*alternateScroll:			true
 
 !! Works on Debian Sids xterm:
 !xterm*VT100.alternateScroll:		true
@@ -114,38 +128,49 @@ xterm*on3Clicks:			line
 !! Zenburn
 !! https://sunaku.github.io/zenburn-terminal-color-scheme.html
 !! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
-! !BLK Cursor
+
+!! BLK Cursor
 ! #define _color0        #000d18
 ! #define _color8        #000d18
-! !RED Tag
+
+!! RED Tag
 ! #define _color1        #e89393
 ! #define _color9        #e89393
-! !GRN SpecialKey
+
+!! GRN SpecialKey
 ! #define _color2        #9ece9e
 ! #define _color10       #9ece9e
-! !YEL Keyword
+
+!! YEL Keyword
 ! #define _color3        #f0dfaf
 ! #define _color11       #f0dfaf
-! !BLU Number
+
+!! BLU Number
 ! #define _color4        #8cd0d3
 ! #define _color12       #8cd0d3
-! !MAG Precondit
+
+!! MAG Precondit
 ! #define _color5        #c0bed1
 ! #define _color13       #c0bed1
-! !CYN Float
+
+!! CYN Float
 ! #define _color6        #dfaf8f
 ! #define _color14       #dfaf8f
-! !WHT Search
+
+!! WHT Search
 ! #define _color7        #efefef
 ! #define _color15       #efefef
-! !FMT Include, StatusLine, ErrorMsg
+
+!! FMT Include, StatusLine, ErrorMsg
 ! #define _colorBD       #ffcfaf
 ! #define _colorUL       #ccdc90
 ! #define _colorIT       #80d4aa
-! !TXT Normal, Normal, Cursor
+
+!! TXT Normal, Normal, Cursor
 ! #define _foreground    #dcdccc
 ! #define _background    #1f1f1f
 ! #define _cursorColor   #8faf9f
+
 ! XTerm*color0         : _color0
 ! XTerm*color1         : _color1
 ! XTerm*color2         : _color2
@@ -171,8 +196,8 @@ xterm*on3Clicks:			line
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! ! Solarized Dark
-! ! https://github.com/solarized/xresources/blob/master/Xresources.dark
+!! Solarized Dark
+!! https://github.com/solarized/xresources/blob/master/Xresources.dark
 ! #define S_base03        #002b36
 ! #define S_base02        #073642
 ! #define S_base01        #586e75
@@ -198,42 +223,42 @@ xterm*on3Clicks:			line
 ! #define S_cyan          #2aa198
 ! #define S_green         #859900
 
-! !! black dark/light
+!! Black dark/light
 ! *color0:                S_base02
 ! *color8:                S_base03
 
-! !! red dark/light
+!! Red dark/light
 ! *color1:                S_red
 ! *color9:                S_orange
 
-! !! green dark/light
+!! Green dark/light
 ! *color2:                S_green
 ! *color10:               S_base01
 
-! !! yellow dark/light
+!! Yellow dark/light
 ! *color3:                S_yellow
 ! *color11:               S_base00
 
-! !! blue dark/light
+!! Blue dark/light
 ! *color4:                S_blue
 ! *color12:               S_base0
 
-! !! magenta dark/light
+!! Magenta dark/light
 ! *color5:                S_magenta
 ! *color13:               S_violet
 
-! !! cyan dark/light
+!! Cyan dark/light
 ! *color6:                S_cyan
 ! *color14:               S_base1
 
-! !! white dark/light
+!! White dark/light
 ! *color7:                S_base2
 ! *color15:               S_base3
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! ! Solarized Light
-! ! https://github.com/solarized/xresources/blob/master/Xresources.light
+!! Solarized Light
+!! https://github.com/solarized/xresources/blob/master/Xresources.light
 ! #define S_base03        #002b36
 ! #define S_base02        #073642
 ! #define S_base01        #586e75
@@ -259,42 +284,42 @@ xterm*on3Clicks:			line
 ! #define S_cyan          #2aa198
 ! #define S_green         #859900
 
-! !! black dark/light
+!! BXSlack dark/light
 ! *color0:                S_base02
 ! *color8:                S_base03
 
-! !! red dark/light
+!! Red dark/light
 ! *color1:                S_red
 ! *color9:                S_orange
 
-! !! green dark/light
+!! Green dark/light
 ! *color2:                S_green
 ! *color10:               S_base01
 
-! !! yellow dark/light
+!! Yellow dark/light
 ! *color3:                S_yellow
 ! *color11:               S_base00
 
-! !! blue dark/light
+!! Blue dark/light
 ! *color4:                S_blue
 ! *color12:               S_base0
 
-! !! magenta dark/light
+!! Magenta dark/light
 ! *color5:                S_magenta
 ! *color13:               S_violet
 
-! !! cyan dark/light
+!! Cyan dark/light
 ! *color6:                S_cyan
 ! *color14:               S_base1
 
-! !! white dark/light
+!! White dark/light
 ! *color7:                S_base2
 ! *color15:               S_base3
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! ! Atom One Light theme
-! ! https://gist.github.com/VovanR/9867373f612693778573
+!! Atom One Light theme
+!! https://gist.github.com/VovanR/9867373f612693778573
 ! xterm*background: #f9f9f9
 ! xterm*foreground: #383a42
 ! xterm*cursorColor: #d0d0d0
@@ -317,9 +342,9 @@ xterm*on3Clicks:			line
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! ! ! Colour scheme: hyperion (light variant)
-! ! ! By Protesilaos Stavrou
-! ! ! https://protesilaos.com/hyperion
+!! Colour scheme: hyperion (light variant)
+!! By Protesilaos Stavrou
+!! https://protesilaos.com/hyperion
 ! xterm*background: #f6f6f6
 ! xterm*foreground: #4d654e
 ! xterm*cursorColor: #4d654e
@@ -349,94 +374,94 @@ xterm*on3Clicks:			line
 ! Repository: https://github.com/arcticicestudio/nord-xresources
 ! License:    MIT
 
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+!#define nord0 #2E3440
+!#define nord1 #3B4252
+!#define nord2 #434C5E
+!#define nord3 #4C566A
+!#define nord4 #D8DEE9
+!#define nord5 #E5E9F0
+!#define nord6 #ECEFF4
+!#define nord7 #8FBCBB
+!#define nord8 #88C0D0
+!#define nord9 #81A1C1
+!#define nord10 #5E81AC
+!#define nord11 #BF616A
+!#define nord12 #D08770
+!#define nord13 #EBCB8B
+!#define nord14 #A3BE8C
+!#define nord15 #B48EAD
 
-*.foreground:			nord4
-*.background:			nord0
-*.cursorColor:			nord4
-*fading:			35
-*fadeColor:			nord3
+!*.foreground:			nord4
+!*.background:			nord0
+!*.cursorColor:			nord4
+!*fading:			35
+!*fadeColor:			nord3
 
-*.color0:			nord1
-*.color1:			nord11
-*.color2:			nord14
-*.color3:			nord13
-*.color4:			nord9
-*.color5:			nord15
-*.color6:			nord8
-*.color7:			nord5
-*.color8:			nord3
-*.color9:			nord11
-*.color10:			nord14
-*.color11:			nord13
-*.color12:			nord9
-*.color13:			nord15
-*.color14:			nord7
-*.color15:			nord6
+!*.color0:			nord1
+!*.color1:			nord11
+!*.color2:			nord14
+!*.color3:			nord13
+!*.color4:			nord9
+!*.color5:			nord15
+!*.color6:			nord8
+!*.color7:			nord5
+!*.color8:			nord3
+!*.color9:			nord11
+!*.color10:			nord14
+!*.color11:			nord13
+!*.color12:			nord9
+!*.color13:			nord15
+!*.color14:			nord7
+!*.color15:			nord6
 
-! ! -----------------------------------------------------------------------------
-! ! -----------------------------------------------------------------------------
-! ! File: gruvbox-dark.xresources
-! ! Description: Retro groove colorscheme generalized
-! ! Author: morhetz <morhetz@gmail.com>
-! ! Source: https://github.com/morhetz/gruvbox-generalized
-! ! Last Modified: 6 Sep 2014
-! ! https://github.com/morhetz/gruvbox-contrib/blob/master/xresources/gruvbox-dark.xresources
-! ! -----------------------------------------------------------------------------
-! ! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! File: gruvbox-dark.xresources
+!! Description: Retro groove colorscheme generalized
+!! Author: morhetz <morhetz@gmail.com>
+!! Source: https://github.com/morhetz/gruvbox-generalized
+!! Last Modified: 6 Sep 2014
+!! https://github.com/morhetz/gruvbox-contrib/blob/master/xresources/gruvbox-dark.xresources
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
 
-! hard contrast: *background: #1d2021
-!! *background: #282828
+!! Hard contrast: *background: #1d2021
+*background: #282828
 
-! soft contrast: *background: #32302f
-!! *foreground: #ebdbb2
+!! Soft contrast: *background: #32302f
+*foreground: #ebdbb2
 
-! Black + DarkGrey
-!! *color0:  #282828
-!! *color8:  #928374
+!! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
 
-! DarkRed + Red
-!! *color1:  #cc241d
-!! *color9:  #fb4934
+!! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
 
-! DarkGreen + Green
-!! *color2:  #98971a
-!! *color10: #b8bb26
+!! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
 
-! DarkYellow + Yellow
-!! *color3:  #d79921
-!! *color11: #fabd2f
+!! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
 
-! DarkBlue + Blue
-!! *color4:  #458588
-!! *color12: #83a598
+!! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
 
-! DarkMagenta + Magenta
-!! *color5:  #b16286
-!! *color13: #d3869b
+!! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
 
-! DarkCyan + Cyan
-!! *color6:  #689d6a
-!! *color14: #8ec07c
+!! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
 
-! LightGrey + White
-!! *color7:  #a89984
-!! *color15: #ebdbb2
+!! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -446,10 +471,11 @@ xterm*on3Clicks:			line
 ! Source: https://github.com/morhetz/gruvbox-generalized
 ! Last Modified: 6 Sep 2014
 ! -----------------------------------------------------------------------------
-!! hard contrast: *background: #f9f5d7
+!! Hard contrast: *background: #f9f5d7
 ! *background: #fbf1c7
-!! soft contrast: *background: #f2e5bc
+!! Soft contrast: *background: #f2e5bc
 ! *foreground: #3c3836
+
 !! Black + DarkGrey
 ! *color0:  #fdf4c1
 ! *color8:  #928374
@@ -496,31 +522,31 @@ xterm*on3Clicks:			line
 ! *.color0:       #28211c
 ! *.color8:       #666666
 
-!! red
+!! Red
 ! *.color1:       #cf6a4c
 ! *.color9:       #cf6a4c
 
-!! green
+!! Green
 ! *.color2:       #54be0d
 ! *.color10:      #54be0d
 
-!! yellow
+!! Yellow
 ! *.color3:       #f9ee98
 ! *.color11:      #f9ee98
 
-! ! blue
+!! Blue
 ! *.color4:       #5ea6ea
 ! *.color12:      #5ea6ea
 
-! ! magenta
+!! Magenta
 ! *.color5:       #9b859d
 ! *.color13:      #9b859d
 
-! ! cyan
+!! Cyan
 ! *.color6:       #afc4db
 ! *.color14:      #afc4db
 
-! ! white
+!! White
 ! *.color7:       #8a8986
 ! *.color15:      #baae9e
 
@@ -528,40 +554,40 @@ xterm*on3Clicks:			line
 ! -----------------------------------------------------------------------------
 !! My Dark Pastel
 !! https://terminal.sexy/
-! ! special
+!! Special
 ! *.foreground:   #d1ccb0
 ! *.background:   #474343
 ! *.cursorColor:  #d1ccb0
 
-! ! black
+!! Black
 ! *.color0:       #20201d
 ! *.color8:       #7d7a68
 
-! ! red
+!! Red
 ! *.color1:       #d73737
 ! *.color9:       #cc4d13
 
-! ! green
+!! Green
 ! *.color2:       #60ac39
 ! *.color10:      #60ac39
 
-! ! yellow
+!! Yellow
 ! *.color3:       #cfb017
 ! *.color11:      #cfb017
 
-! ! blue
+!! Blue
 ! *.color4:       #6684e1
 ! *.color12:      #6684e1
 
-! ! magenta
+!! Magenta
 ! *.color5:       #b854d4
 ! *.color13:      #b854d4
 
-! ! cyan
+!! Cyan
 ! *.color6:       #1fad83
 ! *.color14:      #1fad83
 
-! ! white
+!! White
 ! *.color7:       #a6a28c
 ! *.color15:      #dedbcb
 
@@ -573,30 +599,35 @@ xterm*on3Clicks:			line
 ! *background   : #171717
 ! *foreground   : #F8F8F8
 
-!! black
+!! Black
 ! *color0     : #171717
 ! *color8     : #38252C
 
-!! red
+!! Red
 ! *color1     : #D81765
 ! *color9     : #FF0000
 
-!! green
+!! Green
 ! *color2     : #97D01A
 ! *color10    : #76B639
-! ! yellow
+
+!! Yellow
 ! *color3     : #FFA800
 ! *color11    : #E1A126
-! ! blue
+
+!! Blue
 ! *color4     : #16B1FB
 ! *color12    : #289CD5
-! ! magenta
+
+!! Magenta
 ! *color5     : #FF2491
 ! *color13    : #FF2491
-! ! cyan
+
+!! Cyan
 ! *color6     : #0FDCB6
 ! *color14    : #0A9B81
-! ! white
+
+!! White
 ! *color7     : #EBEBEB
 ! *color15    : #F8F8F8
 
@@ -608,74 +639,74 @@ xterm*on3Clicks:			line
 ! *.background: #383c44
 ! *.foreground: #D2D2DD
 
-! !black
+!! Black
 ! *color0: #383c4a
 ! *color8: #404552
 
-! !red
+!! Red
 ! *color1: #9A4138
 ! *color9: #E7766B
 
-! !green
+!! Green
 ! *color2: #4BEC90
 ! *color10: #3CBF75
 
-! !yellow
+!! Yellow
 ! *color3: #D8D782
 ! *color11: #CFCD63
 
-! !blue
+!! Blue
 ! *color4: #5294d2
 ! *color12: #579CEF
 
-! !magenta
+!! Magenta
 ! *color5: #CE50DD
 ! *color13: #E7766B
 
-! !cyan
+!! Cyan
 ! *color6: #6BE5E7
 ! *color14: #90FDFF
 
-! !white
+!! White
 ! *color7: #CCCCEF
 ! *color15: #FFFFEE
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
 
-! !! Adapta
+!! Adapta
 ! *.background: #F2F3F4
 ! *.foreground: #2E4053
 
-! !black
+!! Black
 ! *color0: #383c4a
 ! *color8: #404552
 
-! !red
+!! Red
 ! *color1: #9A4138
 ! *color9: #E7766B
 
-! !green
+!! Green
 ! *color2: #4BEC90
 ! *color10: #3CBF75
 
-! !yellow
+!! Yellow
 ! *color3: #D8D782
 ! *color11: #CFCD63
 
-! !blue
+!! Blue
 ! *color4: #5294d2
 ! *color12: #579CEF
 
-! !magenta
+!! Magenta
 ! *color5: #AAFFFF
 ! *color13: #E7766B
 
-! !cyan
+!! Cyan
 ! *color6: #6BE5E7
 ! *color14: #90FDFF
 
-! !white
+!! White
 ! *color7: #CCCCEF
 ! *color15: #FFFFEE
 
@@ -683,40 +714,40 @@ xterm*on3Clicks:			line
 ! -----------------------------------------------------------------------------
 
 !! Grayscale Dark
-! ! special
+!! Special
 ! *.foreground:   #b9b9b9
 ! *.background:   #101010
 ! *.cursorColor:  #b9b9b9
 
-! ! black
+!! Black
 ! *.color0:       #101010
 ! *.color8:       #525252
 
-! ! red
+!! Red
 ! *.color1:       #7c7c7c
 ! *.color9:       #7c7c7c
 
-! ! green
+!! Green
 ! *.color2:       #8e8e8e
 ! *.color10:      #8e8e8e
 
-! ! yellow
+!! Yellow
 ! *.color3:       #a0a0a0
 ! *.color11:      #a0a0a0
 
-! ! blue
+!! Blue
 ! *.color4:       #686868
 ! *.color12:      #686868
 
-! ! magenta
+!! Magenta
 ! *.color5:       #747474
 ! *.color13:      #747474
 
-! ! cyan
+!! Cyan
 ! *.color6:       #868686
 ! *.color14:      #868686
 
-! ! white
+!! White
 ! *.color7:       #b9b9b9
 ! *.color15:      #f7f7f7
 
@@ -724,7 +755,7 @@ xterm*on3Clicks:			line
 ! -----------------------------------------------------------------------------
 
 !
-! --- xcalc {{{1
+!! xcalc
 ! -----------------------------------------------------------------------------
 xcalc*ti.button1.vertDistance: 4
 xcalc*ti.button2.vertDistance: 4
@@ -780,13 +811,22 @@ xcalc*ti.cursor: hand2
 XClock*analog      : false
 XClock*twentyfour  : true
 XClock*padding     : 0
-XClock*geometry    : -2-2
+!! XClock*geometry    : 187x35+1426-3
 XClock*render      : false
-XClock*font        : -misc-fixed-bold-r-normal-*-13-*-*-*-*-*-iso10646-1
-XClock*height      : 12
-XClock*background  : dimgray
-XClock*foreground  : white
-XClock*borderWidth : 0
+!! XClock*font        : -misc-fixed-bold-r-normal-*-18-*-*-*-*-*-iso10646-1
+!! XClock*height      : 12
+!! XClock*background  : dimgray
+!! XClock*foreground  : white
+XClock*foreground: #282828
+XClock*background: #ebdbb2
+!! XClock*faceName: AdwaitaMono-Regular
+!! XClock*facesize: 10
+!! XClock.Clock.face: AdwaitaMono Regular:size=12
+XClock*borderWidth: 0
+
+!! xclock -digital -face "fixed:pixelsize=24" -strftime "%A %d %b %Y %H:%M" -update 1 -padding 3 -fg "#ebdbb2" -bg "#282828"
+
+
 
 !! -----------------------------------------------
 
@@ -797,7 +837,7 @@ xscreensaver.passwd.body.label:
 xscreensaver.passwd.heading.label:
 xscreensaver.passwd.login.label:
 xscreensaver.passwd.thermometer.width:  2
-xscreensaver.passwd.uname:              False 
+Xscreensaver.Passwd.uname:              False 
 xscreensaver.passwd.unlock.label:
 
 xscreensaver.Dialog.background:         #000000
@@ -815,4 +855,4 @@ xscreensaver.Dialog.bottomShadowColor:  #000000
 
 !! -----------------------------------------------
 
-!! EoF !!
+!! EOF !!
