@@ -1,6 +1,6 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! $HOME/.Xresources - t420 - OpenBSD 7.8
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! $HOME/.Xresources - x220i - Devuan Excalibur !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Refresh config by running:
 ! xrdb -merge ~/.Xresources
 ! xrdb ~/.Xresources
@@ -15,41 +15,31 @@ Xft.rgba:				rgb
 Xft.hinting:				true
 Xft.hintstyle:				hintslight
 
-!! -----------------------------------------------------------------------------
-
-!! xidle
-! drag pointer to lower left corner to lock screen
-XIdle*position : sw
-! and leave it there for one second.
-XIdle*delay    : 1
-! also lock screen after 5 minutes idle
-XIdle*timeout  : 300
-
-! -----------------------------------------------------------------------------
-! -----------------------------------------------------------------------------
+!! -----------------------------------------------
 
 !! XTerm
 !! http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
 
-xterm*faceName:			AdwaitaMono-Regular
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Fonts:
+!! -----
 !!xterm*faceName:		Ubuntu Mono
 !!xterm*faceName:		CPMono_v07 Plain
-!!xterm*faceName:		ShareTechMono-Regular
+xterm*faceName:			ShareTechMono-Regular
 !!xterm*faceName:		Perfect DOS VGA 437
 
-xterm*faceSize:			10
+xterm*faceSize:			12
 xterm*renderFont:		true
 
-!!Xcursor.theme:		left_prt
-!!Xcursor.theme:		my_breeze_cursors
+Xcursor.theme:			my_breeze_cursors
 !!Xcursor.theme:		Google_Cursor
-!!Xcursor.theme:		my-Adwaita
+!!Xcursor.theme:		Adwaita
 
 xterm*cursorBlink:		True
 xterm*pointerColor:		White
 xterm*pointerColorBackground:	Black
 xterm*cursorColor:		Orange
-XTerm*pointerShape:		left_ptr
 
 xterm*VT10x0.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
@@ -66,12 +56,12 @@ xterm*VT10x0.Translations: #override \
 !! -----------------------------------------------
 !! https://wiki.archlinux.org/title/Rxvt-unicode
 
-!!URxvt.print-pipe: cat > ~/Downloads/URxvt_$(date '+%Y-%m-%d_%H:%M:%S').txt
-!!URxvt.scrollTtyOutput:		False
-!!URxvt.scrollWithBuffer:		True
-!!URxvt.scrollTtyKeypress:	True
-!!URxvt.secondaryScroll:		False
-!!URxvt.secondaryWheel:		True
+URxvt.print-pipe: cat > ~/Downloads/URxvt_$(date '+%Y-%m-%d_%H:%M:%S').txt
+URxvt.scrollTtyOutput:			False
+URxvt.scrollWithBuffer:			True
+URxvt.scrollTtyKeypress:		True
+URxvt.secondaryScroll:			False
+URxvt.secondaryWheel:			True
 
 !! -----------------------------------------------
 
@@ -95,6 +85,9 @@ xterm*scrollTtyOutput:			false
 
 !! Pressing a key automatically scrolls to the bottom
 xterm*scrollKey:			true
+
+!! Doesnt work on Debian Sids xterm:
+!XTerm*alternateScroll:			true
 
 !! Works on Debian Sids xterm:
 !xterm*VT100.alternateScroll:		true
@@ -756,6 +749,7 @@ xterm*on3Clicks:			line
 
 !
 !! xcalc
+
 ! -----------------------------------------------------------------------------
 xcalc*ti.button1.vertDistance: 4
 xcalc*ti.button2.vertDistance: 4
@@ -811,22 +805,13 @@ xcalc*ti.cursor: hand2
 XClock*analog      : false
 XClock*twentyfour  : true
 XClock*padding     : 0
-!! XClock*geometry    : 187x35+1426-3
+XClock*geometry    : -2-2
 XClock*render      : false
-!! XClock*font        : -misc-fixed-bold-r-normal-*-18-*-*-*-*-*-iso10646-1
-!! XClock*height      : 12
-!! XClock*background  : dimgray
-!! XClock*foreground  : white
-XClock*foreground: #282828
-XClock*background: #ebdbb2
-!! XClock*faceName: AdwaitaMono-Regular
-!! XClock*facesize: 10
-!! XClock.Clock.face: AdwaitaMono Regular:size=12
-XClock*borderWidth: 0
-
-!! xclock -digital -face "fixed:pixelsize=24" -strftime "%A %d %b %Y %H:%M" -update 1 -padding 3 -fg "#ebdbb2" -bg "#282828"
-
-
+XClock*font        : -misc-fixed-bold-r-normal-*-13-*-*-*-*-*-iso10646-1
+XClock*height      : 12
+XClock*background  : dimgray
+XClock*foreground  : white
+XClock*borderWidth : 0
 
 !! -----------------------------------------------
 
@@ -837,7 +822,7 @@ xscreensaver.passwd.body.label:
 xscreensaver.passwd.heading.label:
 xscreensaver.passwd.login.label:
 xscreensaver.passwd.thermometer.width:  2
-Xscreensaver.Passwd.uname:              False 
+xscreensaver.passwd.uname:              False 
 xscreensaver.passwd.unlock.label:
 
 xscreensaver.Dialog.background:         #000000
@@ -855,4 +840,4 @@ xscreensaver.Dialog.bottomShadowColor:  #000000
 
 !! -----------------------------------------------
 
-!! EOF !!
+!! EoF !!
