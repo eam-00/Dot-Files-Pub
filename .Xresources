@@ -1,4 +1,3 @@
-```
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! $HOME/.Xresources - x220i - Devuan Excalibur !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -40,10 +39,10 @@ Xcursor.theme:				my_breeze_cursors
 !!Xcursor.theme:			Google_Cursor
 !!Xcursor.theme:			Adwaita
 
-xterm*cursorBlink:		True
-xterm*pointerColor:		White
-xterm*pointerColorBackground:	Black
-xterm*cursorColor:		Orange
+xterm*cursorBlink:			True
+xterm*pointerColor:			White
+xterm*pointerColorBackground:		Black
+xterm*cursorColor:			Orange
 
 xterm*VT10x0.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
@@ -845,6 +844,3 @@ xscreensaver.Dialog.bottomShadowColor:  #000000
 !! -----------------------------------------------
 
 !! EoF !!
-
-
-```
