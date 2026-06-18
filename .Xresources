@@ -24,10 +24,10 @@ Xft.hintstyle:				hintslight
 !! -----------------------------------------------------------------------------
 !! Fonts:
 !! -----
-!!xterm*faceName:		Ubuntu Mono
-!!xterm*faceName:		CPMono_v07 Plain
-xterm*faceName:			ShareTechMono-Regular
-!!xterm*faceName:		Perfect DOS VGA 437
+!!xterm*faceName:			Ubuntu Mono
+!!xterm*faceName:			CPMono_v07 Plain
+xterm*faceName:				ShareTechMono-Regular
+!!xterm*faceName:			Perfect DOS VGA 437
 
 xterm*faceSize:			12
 xterm*renderFont:		true
