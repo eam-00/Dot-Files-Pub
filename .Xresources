@@ -29,12 +29,12 @@ Xft.hintstyle:				hintslight
 xterm*faceName:				ShareTechMono-Regular
 !!xterm*faceName:			Perfect DOS VGA 437
 
-xterm*faceSize:			12
-xterm*renderFont:		true
+xterm*faceSize:				12
+xterm*renderFont:			true
 
-Xcursor.theme:			my_breeze_cursors
-!!Xcursor.theme:		Google_Cursor
-!!Xcursor.theme:		Adwaita
+Xcursor.theme:				my_breeze_cursors
+!!Xcursor.theme:			Google_Cursor
+!!Xcursor.theme:			Adwaita
 
 xterm*cursorBlink:		True
 xterm*pointerColor:		White
