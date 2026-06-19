@@ -1,9 +1,10 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! $HOME/.Xresources - x220i - Devuan Excalibur !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Refresh config by running:
-! xrdb -merge ~/.Xresources
-! xrdb ~/.Xresources
+!! xrdb -remove
+!! xrdb -query all
+!! xrdb -merge ~/.Xresources
+!! xrdb ~/.Xresources
 
 !! -----------------------------------------------
 
@@ -24,37 +25,54 @@ Xft.hintstyle:				hintslight
 !! -----------------------------------------------------------------------------
 !! Fonts:
 !! -----
-XTerm*faceName:				GohuFont Nerd Font Mono:style=Regular:pixelsize=12
-!!XTerm*faceName:				xft:GohuFont Nerd Font Mono:pixelsize=12
-!!xterm*faceName:				xft:GohuFont Nerd Font
+!!XTerm*faceName:			Gohu Nerd Font
+!!XTerm.vt100.faceName:			GohuFont Nerd Font Mono:pixelsize=12
+!!XTerm*faceName:			Gohu GohuFont	
+!!XTerm*faceName:			GohuFont Nerd Font Mono:style=Regular:pixelsize=12
+!!XTerm*faceName:			xft:GohuFont Nerd Font Mono:pixelsize=12
+!!xterm*faceName:			xft:GohuFont Nerd Font
 !!xterm*faceName:			Ubuntu Mono
 !!xterm*faceName:			CPMono_v07 Plain
-!!xterm*faceName:			ShareTechMono-Regular
+xterm*faceName:				ShareTechMono-Regular
 !!xterm*faceName:			Perfect DOS VGA 437
 
 xterm*faceSize:				12
 xterm*renderFont:			true
 
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! GTK Mouse Cursor:
+!! ----------------
 Xcursor.theme:				my_breeze_cursors
 !!Xcursor.theme:			Google_Cursor
 !!Xcursor.theme:			Adwaita
 
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Terminal Cursor:
+!! ---------------
 xterm*cursorBlink:			True
 xterm*pointerColor:			White
 xterm*pointerColorBackground:		Black
 xterm*cursorColor:			Orange
 
-xterm*VT10x0.Translations: #override \
-    Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
-    Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! X11 Mouse Cursor:
+!! ----------------
+XTerm*pointerShape:			left_ptr
 
-    Ctrl <Key> minus: smaller-vt-font() \n\
-    Ctrl <Key> plus: larger-vt-font() \n\
-    Ctrl <Key> 0: set-vt-font(d)
-
-*VT100.translations:#override\n<Key>F12:set-reverse-video(toggle)
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+XTerm.vt100.translations: #override \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n\
+  Ctrl <Key> 0: set-vt-font(d) \n\
+  Shift <Key> Up: scroll-back(10, line) \n\
+  Shift <Key> Down: scroll-forw(10, line) \n\
+  <Key> F12: set-reverse-video(toggle)
 
 !! -----------------------------------------------
 !! https://wiki.archlinux.org/title/Rxvt-unicode
@@ -68,12 +86,17 @@ xterm*VT10x0.Translations: #override \
 
 !! -----------------------------------------------
 
+!! -----------------------------------------------
+!! -----------------------------------------------
 !! Scrollbars disabled
 XTerm*scrollBar:			False
 
 !! Remove the additional black border
 XTerm*borderWidth:			0
 XTerm*internalBorder:			0
+
+!! -----------------------------------------------
+!! -----------------------------------------------
 
 !! Only select text
 xterm*highlightSelection:		true
@@ -106,18 +129,31 @@ xterm*fastScroll:			true
 xterm*charClass:			33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 !!XTerm*on3Clicks:                       regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
 
-!! Xterm Colors
-xterm*termName:				xterm-256color
-
-! clicking a line selects only from the current word forward
+!! Clicking a line selects only from the current word forward
 xterm*cutToBeginningOfLine:		false
-! and dont include a trailing newline in the selection
+!! Dont include a trailing newline in the selection
 xterm*cutNewline:			false
 
-! select word on two clicks
+!! Select word on two clicks
 xterm*on2Clicks:			word
-! select whole line on three clicks
+!! Select whole line on three clicks
 xterm*on3Clicks:			line
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Xterm Colors:
+!! ------------
+xterm*termName:				xterm-256color
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! xidle
+!! Drag pointer to lower left corner to lock screen
+XIdle*position : sw
+!! Leave it there for one second.
+XIdle*delay    : 1
+!! Lock screen after 5 minutes idle
+XIdle*timeout  : 300
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
