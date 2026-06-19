@@ -60,10 +60,12 @@ xterm*cursorColor:			Orange
 !! -----------------------------------------------------------------------------
 !! X11 Mouse Cursor:
 !! ----------------
-XTerm*pointerShape:			left_ptr
+!XTerm*pointerShape:			left_ptr
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
+!! Keyboard Shortcuts:
+!! ------------------
 XTerm.vt100.translations: #override \n\
   Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
   Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
@@ -104,16 +106,13 @@ xterm*highlightSelection:		true
 xterm*trimSelection:			true
 
 !! Lines of output that you can scroll back over
-xterm*saveLines:			4096
+xterm*saveLines:			16384
 
 !! Do not scroll when there is new input e.g. tail -f /var/syslog
 xterm*scrollTtyOutput:			false
 
 !! Pressing a key automatically scrolls to the bottom
 xterm*scrollKey:			true
-
-!! Doesnt work on Debian Sids xterm:
-!XTerm*alternateScroll:			true
 
 !! Works on Debian Sids xterm:
 !xterm*VT100.alternateScroll:		true
@@ -123,7 +122,7 @@ xterm*multiScroll:			true
 xterm*jumpScroll:			true
 xterm*fastScroll:			true
 
-! Do not clear the screen after the program exits
+!! Do not clear the screen after the program exits
 !! XTerm*VT100*titeInhibit:             true
 !! https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html
 xterm*charClass:			33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
@@ -157,39 +156,43 @@ XIdle*timeout  : 300
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
+!! Xterm Themes:
+!! ------------
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
 !! Zenburn
 !! https://sunaku.github.io/zenburn-terminal-color-scheme.html
 !! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
 
-!! BLK Cursor
+!! Black Cursor
 ! #define _color0        #000d18
 ! #define _color8        #000d18
 
-!! RED Tag
+!! Red Tag
 ! #define _color1        #e89393
 ! #define _color9        #e89393
 
-!! GRN SpecialKey
+!! Green SpecialKey
 ! #define _color2        #9ece9e
 ! #define _color10       #9ece9e
 
-!! YEL Keyword
+!! Yellow Keyword
 ! #define _color3        #f0dfaf
 ! #define _color11       #f0dfaf
 
-!! BLU Number
+!! Blue Number
 ! #define _color4        #8cd0d3
 ! #define _color12       #8cd0d3
 
-!! MAG Precondit
+!! Magenta Precondit
 ! #define _color5        #c0bed1
 ! #define _color13       #c0bed1
 
-!! CYN Float
+!! Cyan Float
 ! #define _color6        #dfaf8f
 ! #define _color14       #dfaf8f
 
-!! WHT Search
+!! White Search
 ! #define _color7        #efefef
 ! #define _color15       #efefef
 
