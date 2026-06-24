@@ -546,7 +546,7 @@ xterm*color15: #f6f6f6
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
-!! Mocha Dark
+!! catppuccin Mocha Dark
 !! https://terminal.sexy/
 
 !! Special
@@ -585,6 +585,47 @@ xterm*color15: #f6f6f6
 !! White
 !*.color7:       #8a8986
 !*.color15:      #baae9e
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+!! Catppuccin Latte Palette
+!! https://github.com/catppuccin/xresources/tree/main/themes
+
+!! Special Colors
+*foreground:	#4c4f69
+*background:	#eff1f5
+
+!! Black
+*color0:	#5c5f77
+*color8:	#6c6f85
+
+!! Red
+*color1:	#d20f39
+*color9:	#d20f39
+
+!! Green
+*color2:	#40a02b
+*color10:	#40a02b
+
+!! Yellow
+*color3:	#df8e1d
+*color11:	#df8e1d
+
+!! Blue
+*color4:	#1e66f5
+*color12:	#1e66f5
+
+!! Magenta
+*color5:	#8839ef
+*color13:	#8839ef
+
+!! Cyan
+*color6:	#239fb5
+*color14:	#239fb5
+
+!! White
+*color7:	#acb0be
+*color15:	#bcc0cc
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -629,8 +670,8 @@ xterm*color15: #f6f6f6
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-! Neon Colors
-! https://github.com/logico-dev/Xresources-themes/blob/master/xcolors-neon.Xresources
+!! Neon Colors
+!! https://github.com/logico-dev/Xresources-themes/blob/master/xcolors-neon.Xresources
 
 ! *background   : #171717
 ! *foreground   : #F8F8F8
