@@ -93,9 +93,10 @@ XTerm.vt100.translations: #override \n\
 !! Scrollbars disabled
 XTerm*scrollBar:			False
 
-!! Remove the additional black border
+!! Remove the additional black border:
 XTerm*borderWidth:			0
-XTerm*internalBorder:			0
+!! Text padding inside the Terminal:
+XTerm*internalBorder:			10
 
 !! -----------------------------------------------
 !! -----------------------------------------------
@@ -129,20 +130,20 @@ xterm*charClass:			33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 !!XTerm*on3Clicks:                       regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
 
 !! Clicking a line selects only from the current word forward
-xterm*cutToBeginningOfLine:		false
+XTerm*cutToBeginningOfLine:		false
 !! Dont include a trailing newline in the selection
-xterm*cutNewline:			false
+XTerm*cutNewline:			false
 
 !! Select word on two clicks
-xterm*on2Clicks:			word
+XTerm*on2Clicks:			word
 !! Select whole line on three clicks
-xterm*on3Clicks:			line
+XTerm*on3Clicks:			line
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
 !! Xterm Colors:
 !! ------------
-xterm*termName:				xterm-256color
+XTerm*termName:				xterm-256color
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
@@ -151,7 +152,7 @@ xterm*termName:				xterm-256color
 XIdle*position : sw
 !! Leave it there for one second.
 XIdle*delay    : 1
-!! Lock screen after 5 minutes idle
+!! Lock screen after 5 minutes of inactivity
 XIdle*timeout  : 300
 
 !! -----------------------------------------------------------------------------
@@ -319,7 +320,7 @@ XIdle*timeout  : 300
 ! #define S_cyan          #2aa198
 ! #define S_green         #859900
 
-!! BXSlack dark/light
+!! Black dark/light
 ! *color0:                S_base02
 ! *color8:                S_base03
 
@@ -355,50 +356,50 @@ XIdle*timeout  : 300
 ! -----------------------------------------------------------------------------
 !! Atom One Light theme
 !! https://gist.github.com/VovanR/9867373f612693778573
-! xterm*background: #f9f9f9
-! xterm*foreground: #383a42
-! xterm*cursorColor: #d0d0d0
-! xterm*color0: #000000
-! xterm*color1: #E45649
-! xterm*color2: #50A14F
-! xterm*color3: #986801
-! xterm*color4: #4078F2
-! xterm*color5: #A626A4
-! xterm*color6: #0184BC
-! xterm*color7: #A0A1A7
-! xterm*color8: #5c6370
-! xterm*color9: #e06c75
-! xterm*color10: #50A14F
-! xterm*color11: #986801
-! xterm*color12: #4078F2
-! xterm*color13: #A626A4
-! xterm*color14: #0184BC
-! xterm*color15: #ffffff
+!xterm*background: #f9f9f9
+!xterm*foreground: #383a42
+!! xterm*cursorColor: #d0d0d0
+!xterm*color0: #000000
+!xterm*color1: #E45649
+!xterm*color2: #50A14F
+!xterm*color3: #986801
+!xterm*color4: #4078F2
+!xterm*color5: #A626A4
+!xterm*color6: #0184BC
+!xterm*color7: #A0A1A7
+!xterm*color8: #5c6370
+!xterm*color9: #e06c75
+!xterm*color10: #50A14F
+!xterm*color11: #986801
+!xterm*color12: #4078F2
+!xterm*color13: #A626A4
+!xterm*color14: #0184BC
+!xterm*color15: #ffffff
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
 !! Colour scheme: hyperion (light variant)
 !! By Protesilaos Stavrou
 !! https://protesilaos.com/hyperion
-! xterm*background: #f6f6f6
-! xterm*foreground: #4d654e
+xterm*background: #f6f6f6
+xterm*foreground: #4d654e
 ! xterm*cursorColor: #4d654e
-! xterm*color0: #0a2d3c
-! xterm*color1: #d94832
-! xterm*color2: #329c50
-! xterm*color3: #dbac13
-! xterm*color4: #1d8fde
-! xterm*color5: #dc76aa
-! xterm*color6: #0eaac8
-! xterm*color7: #e6e6e6
-! xterm*color8: #1a3d4c
-! xterm*color9: #dc7d3a
-! xterm*color10: #4d654e
-! xterm*color11: #8d9474
-! xterm*color12: #6a8ba9
-! xterm*color13: #aa7deb
-! xterm*color14: #9ebcc8
-! xterm*color15: #f6f6f6
+xterm*color0: #0a2d3c
+xterm*color1: #d94832
+xterm*color2: #329c50
+xterm*color3: #dbac13
+xterm*color4: #1d8fde
+xterm*color5: #dc76aa
+xterm*color6: #0eaac8
+xterm*color7: #e6e6e6
+xterm*color8: #1a3d4c
+xterm*color9: #dc7d3a
+xterm*color10: #4d654e
+xterm*color11: #8d9474
+xterm*color12: #6a8ba9
+xterm*color13: #aa7deb
+xterm*color14: #9ebcc8
+xterm*color15: #f6f6f6
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -461,42 +462,42 @@ XIdle*timeout  : 300
 !! -----------------------------------------------------------------------------
 
 !! Hard contrast: *background: #1d2021
-*background: #282828
+!*background: #282828
 
 !! Soft contrast: *background: #32302f
-*foreground: #ebdbb2
+!*foreground: #ebdbb2
 
 !! Black + DarkGrey
-*color0:  #282828
-*color8:  #928374
+!*color0:  #282828
+!*color8:  #928374
 
 !! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
+!*color1:  #cc241d
+!*color9:  #fb4934
 
 !! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
+!*color2:  #98971a
+!*color10: #b8bb26
 
 !! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
+!*color3:  #d79921
+!*color11: #fabd2f
 
 !! DarkBlue + Blue
-*color4:  #458588
-*color12: #83a598
+!*color4:  #458588
+!*color12: #83a598
 
 !! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
+!*color5:  #b16286
+!*color13: #d3869b
 
 !! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
+!*color6:  #689d6a
+!*color14: #8ec07c
 
 !! LightGrey + White
-*color7:  #a89984
-*color15: #ebdbb2
+!*color7:  #a89984
+!*color15: #ebdbb2
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -549,41 +550,41 @@ XIdle*timeout  : 300
 !! https://terminal.sexy/
 
 !! Special
-! *.foreground:   #8a8986
-! *.background:   #28211c
-! *.cursorColor:  #8a8986
+!*.foreground:   #8a8986
+!*.background:   #28211c
+!*.cursorColor:  #8a8986
 
 !! Black
-! *.color0:       #28211c
-! *.color8:       #666666
+!*.color0:       #28211c
+!*.color8:       #666666
 
 !! Red
-! *.color1:       #cf6a4c
-! *.color9:       #cf6a4c
+!*.color1:       #cf6a4c
+!*.color9:       #cf6a4c
 
 !! Green
-! *.color2:       #54be0d
-! *.color10:      #54be0d
+!*.color2:       #54be0d
+!*.color10:      #54be0d
 
 !! Yellow
-! *.color3:       #f9ee98
-! *.color11:      #f9ee98
+!*.color3:       #f9ee98
+!*.color11:      #f9ee98
 
 !! Blue
-! *.color4:       #5ea6ea
-! *.color12:      #5ea6ea
+!*.color4:       #5ea6ea
+!*.color12:      #5ea6ea
 
 !! Magenta
-! *.color5:       #9b859d
-! *.color13:      #9b859d
+!*.color5:       #9b859d
+!*.color13:      #9b859d
 
 !! Cyan
-! *.color6:       #afc4db
-! *.color14:      #afc4db
+!*.color6:       #afc4db
+!*.color14:      #afc4db
 
 !! White
-! *.color7:       #8a8986
-! *.color15:      #baae9e
+!*.color7:       #8a8986
+!*.color15:      #baae9e
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
