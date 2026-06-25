@@ -147,13 +147,14 @@ XTerm*termName:				xterm-256color
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
-!! xidle
+!! xidle:
+!! -----
 !! Drag pointer to lower left corner to lock screen
-XIdle*position : sw
+XIdle*position:		sw
 !! Leave it there for one second.
-XIdle*delay    : 1
+XIdle*delay:		1
 !! Lock screen after 5 minutes of inactivity
-XIdle*timeout  : 300
+XIdle*timeout:		300
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
@@ -546,7 +547,7 @@ xterm*color15: #f6f6f6
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
-!! catppuccin Mocha Dark
+!! Catppuccin: Mocha Dark
 !! https://terminal.sexy/
 
 !! Special
@@ -588,7 +589,7 @@ xterm*color15: #f6f6f6
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-!! Catppuccin Latte Palette
+!! Catppuccin: Latte
 !! https://github.com/catppuccin/xresources/tree/main/themes
 
 !! Special Colors
@@ -631,6 +632,7 @@ xterm*color15: #f6f6f6
 ! -----------------------------------------------------------------------------
 !! My Dark Pastel
 !! https://terminal.sexy/
+
 !! Special
 ! *.foreground:   #d1ccb0
 ! *.background:   #474343
@@ -710,9 +712,9 @@ xterm*color15: #f6f6f6
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-
 !! Arc
 !! https://raw.githubusercontent.com/selloween/arc-theme-xresources/master/Xresources
+
 ! *.background: #383c44
 ! *.foreground: #D2D2DD
 
@@ -750,8 +752,8 @@ xterm*color15: #f6f6f6
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
-
 !! Adapta
+
 ! *.background: #F2F3F4
 ! *.foreground: #2E4053
 
