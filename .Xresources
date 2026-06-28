@@ -1,5 +1,5 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! $HOME/.Xresources - x220i - Devuan Excalibur !!
+!! $HOME/.Xresources - mbp-01 - Debian 13
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! xrdb -remove
 !! xrdb -query all
@@ -36,7 +36,7 @@ Xft.hintstyle:				hintslight
 xterm*faceName:				ShareTechMono-Regular
 !!xterm*faceName:			Perfect DOS VGA 437
 
-xterm*faceSize:				12
+xterm*faceSize:				13
 xterm*renderFont:			true
 
 !! -----------------------------------------------------------------------------
@@ -383,25 +383,25 @@ XIdle*timeout:		300
 !! Colour scheme: hyperion (light variant)
 !! By Protesilaos Stavrou
 !! https://protesilaos.com/hyperion
-xterm*background: #f6f6f6
-xterm*foreground: #4d654e
+!xterm*background: #f6f6f6
+!xterm*foreground: #4d654e
 ! xterm*cursorColor: #4d654e
-xterm*color0: #0a2d3c
-xterm*color1: #d94832
-xterm*color2: #329c50
-xterm*color3: #dbac13
-xterm*color4: #1d8fde
-xterm*color5: #dc76aa
-xterm*color6: #0eaac8
-xterm*color7: #e6e6e6
-xterm*color8: #1a3d4c
-xterm*color9: #dc7d3a
-xterm*color10: #4d654e
-xterm*color11: #8d9474
-xterm*color12: #6a8ba9
-xterm*color13: #aa7deb
-xterm*color14: #9ebcc8
-xterm*color15: #f6f6f6
+!xterm*color0: #0a2d3c
+!xterm*color1: #d94832
+!xterm*color2: #329c50
+!xterm*color3: #dbac13
+!xterm*color4: #1d8fde
+!xterm*color5: #dc76aa
+!xterm*color6: #0eaac8
+!xterm*color7: #e6e6e6
+!xterm*color8: #1a3d4c
+!xterm*color9: #dc7d3a
+!xterm*color10: #4d654e
+!xterm*color11: #8d9474
+!xterm*color12: #6a8ba9
+!xterm*color13: #aa7deb
+!xterm*color14: #9ebcc8
+!xterm*color15: #f6f6f6
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -594,40 +594,160 @@ xterm*color15: #f6f6f6
 !! https://github.com/catppuccin/xresources/blob/main/themes/latte.Xresources
 
 !! Special Colors
-*foreground:	#4c4f69
-*background:	#eff1f5
+!*foreground:	#4c4f69
+!*background:	#eff1f5
 
 !! Black
-*color0:	#5c5f77
-*color8:	#6c6f85
+!*color0:	#5c5f77
+!*color8:	#6c6f85
 
 !! Red
-*color1:	#d20f39
-*color9:	#d20f39
+!*color1:	#d20f39
+!*color9:	#d20f39
 
 !! Green
-*color2:	#40a02b
-*color10:	#40a02b
+!*color2:	#40a02b
+!*color10:	#40a02b
 
 !! Yellow
-*color3:	#df8e1d
-*color11:	#df8e1d
+!*color3:	#df8e1d
+!*color11:	#df8e1d
 
 !! Blue
-*color4:	#1e66f5
-*color12:	#1e66f5
+!*color4:	#1e66f5
+!*color12:	#1e66f5
 
 !! Magenta
-*color5:	#8839ef
-*color13:	#8839ef
+!*color5:	#8839ef
+!*color13:	#8839ef
 
 !! Cyan
-*color6:	#239fb5
-*color14:	#239fb5
+!*color6:	#239fb5
+!*color14:	#239fb5
 
 !! White
-*color7:	#acb0be
-*color15:	#bcc0cc
+!*color7:	#acb0be
+!*color15:	#bcc0cc
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Frappe
+!! https://github.com/catppuccin/xresources/blob/main/themes/frappe.Xresources
+!*background: #303446
+!*foreground: #c6d0f5
+!*cursorColor: #f2d5cf
+
+!! black
+!*color0: #51576d
+!*color8: #626880
+
+!! red
+!*color1: #e78284
+!*color9: #e78284
+
+!! green
+!*color2: #a6d189
+!*color10: #a6d189
+
+!! yellow
+!*color3: #e5c890
+!*color11: #e5c890
+
+!! blue
+!*color4: #8caaee
+!*color12: #8caaee
+
+!! magenta
+!*color5: #f4b8e4
+!*color13: #f4b8e4
+
+!! cyan
+!*color6: #81c8be
+!*color14: #81c8be
+
+!! white
+!*color7: #b5bfe2
+!*color15: #a5adce
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Macchiato
+!! https://github.com/catppuccin/xresources/blob/main/themes/macchiato.Xresources
+!*background: #24273a
+!*foreground: #cad3f5
+!*cursorColor: #f4dbd6
+
+!! black
+!*color0: #494d64
+!*color8: #5b6078
+
+!! red
+!*color1: #ed8796
+!*color9: #ed8796
+
+!! green
+!*color2: #a6da95
+!*color10: #a6da95
+
+!! yellow
+!*color3: #eed49f
+!*color11: #eed49f
+
+!! blue
+!*color4: #8aadf4
+!*color12: #8aadf4
+
+!! magenta
+!*color5: #f5bde6
+!*color13: #f5bde6
+
+!! cyan
+!*color6: #8bd5ca
+!*color14: #8bd5ca
+
+!! white
+!*color7: #b8c0e0
+!*color15: #a5adcb
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Mocha
+!! https://github.com/catppuccin/xresources/blob/main/themes/mocha.Xresources
+*background: #1e1e2e
+*foreground: #cdd6f4
+!*cursorColor: #f5e0dc
+
+!! black
+*color0: #45475a
+*color8: #585b70
+
+!! red
+*color1: #f38ba8
+*color9: #f38ba8
+
+!! green
+*color2: #a6e3a1
+*color10: #a6e3a1
+
+!! yellow
+*color3: #f9e2af
+*color11: #f9e2af
+
+!! blue
+*color4: #89b4fa
+*color12: #89b4fa
+
+!! magenta
+*color5: #f5c2e7
+*color13: #f5c2e7
+
+!! cyan
+*color6: #94e2d5
+*color14: #94e2d5
+
+!! white
+*color7: #bac2de
+*color15: #a6adc8
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
