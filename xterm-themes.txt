@@ -1,0 +1,750 @@
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Zenburn
+!! https://sunaku.github.io/zenburn-terminal-color-scheme.html
+!! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
+
+!! Black Cursor
+! #define _color0        #000d18
+! #define _color8        #000d18
+
+!! Red Tag
+! #define _color1        #e89393
+! #define _color9        #e89393
+
+!! Green SpecialKey
+! #define _color2        #9ece9e
+! #define _color10       #9ece9e
+
+!! Yellow Keyword
+! #define _color3        #f0dfaf
+! #define _color11       #f0dfaf
+
+!! Blue Number
+! #define _color4        #8cd0d3
+! #define _color12       #8cd0d3
+
+!! Magenta Precondit
+! #define _color5        #c0bed1
+! #define _color13       #c0bed1
+
+!! Cyan Float
+! #define _color6        #dfaf8f
+! #define _color14       #dfaf8f
+
+!! White Search
+! #define _color7        #efefef
+! #define _color15       #efefef
+
+!! FMT Include, StatusLine, ErrorMsg
+! #define _colorBD       #ffcfaf
+! #define _colorUL       #ccdc90
+! #define _colorIT       #80d4aa
+
+!! TXT Normal, Normal, Cursor
+! #define _foreground    #dcdccc
+! #define _background    #1f1f1f
+! #define _cursorColor   #8faf9f
+
+! XTerm*color0         : _color0
+! XTerm*color1         : _color1
+! XTerm*color2         : _color2
+! XTerm*color3         : _color3
+! XTerm*color4         : _color4
+! XTerm*color5         : _color5
+! XTerm*color6         : _color6
+! XTerm*color7         : _color7
+! XTerm*color8         : _color8
+! XTerm*color9         : _color9
+! XTerm*color10        : _color10
+! XTerm*color11        : _color11
+! XTerm*color12        : _color12
+! XTerm*color13        : _color13
+! XTerm*color14        : _color14
+! XTerm*color15        : _color15
+! XTerm*colorBD        : _colorBD
+! XTerm*colorIT        : _colorIT
+! XTerm*colorUL        : _colorUL
+! XTerm*foreground     : _foreground
+! XTerm*background     : _background
+! XTerm*cursorColor    : _cursorColor
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+!! Solarized Dark
+!! https://github.com/solarized/xresources/blob/master/Xresources.dark
+! #define S_base03        #002b36
+! #define S_base02        #073642
+! #define S_base01        #586e75
+! #define S_base00        #657b83
+! #define S_base0         #839496
+! #define S_base1         #93a1a1
+! #define S_base2         #eee8d5
+! #define S_base3         #fdf6e3
+
+! *background:            S_base03
+! *foreground:            S_base0
+! *fadeColor:             S_base03
+! *cursorColor:           S_base1
+! *pointerColorBackground:S_base01
+! *pointerColorForeground:S_base1
+
+! #define S_yellow        #b58900
+! #define S_orange        #cb4b16
+! #define S_red           #dc322f
+! #define S_magenta       #d33682
+! #define S_violet        #6c71c4
+! #define S_blue          #268bd2
+! #define S_cyan          #2aa198
+! #define S_green         #859900
+
+!! Black dark/light
+! *color0:                S_base02
+! *color8:                S_base03
+
+!! Red dark/light
+! *color1:                S_red
+! *color9:                S_orange
+
+!! Green dark/light
+! *color2:                S_green
+! *color10:               S_base01
+
+!! Yellow dark/light
+! *color3:                S_yellow
+! *color11:               S_base00
+
+!! Blue dark/light
+! *color4:                S_blue
+! *color12:               S_base0
+
+!! Magenta dark/light
+! *color5:                S_magenta
+! *color13:               S_violet
+
+!! Cyan dark/light
+! *color6:                S_cyan
+! *color14:               S_base1
+
+!! White dark/light
+! *color7:                S_base2
+! *color15:               S_base3
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+!! Solarized Light
+!! https://github.com/solarized/xresources/blob/master/Xresources.light
+! #define S_base03        #002b36
+! #define S_base02        #073642
+! #define S_base01        #586e75
+! #define S_base00        #657b83
+! #define S_base0         #839496
+! #define S_base1         #93a1a1
+! #define S_base2         #eee8d5
+! #define S_base3         #fdf6e3
+
+! *background:            S_base3
+! *foreground:            S_base00
+! *fadeColor:             S_base3
+! *cursorColor:           S_base01
+! *pointerColorBackground:S_base1
+! *pointerColorForeground:S_base01
+
+! #define S_yellow        #b58900
+! #define S_orange        #cb4b16
+! #define S_red           #dc322f
+! #define S_magenta       #d33682
+! #define S_violet        #6c71c4
+! #define S_blue          #268bd2
+! #define S_cyan          #2aa198
+! #define S_green         #859900
+
+!! Black dark/light
+! *color0:                S_base02
+! *color8:                S_base03
+
+!! Red dark/light
+! *color1:                S_red
+! *color9:                S_orange
+
+!! Green dark/light
+! *color2:                S_green
+! *color10:               S_base01
+
+!! Yellow dark/light
+! *color3:                S_yellow
+! *color11:               S_base00
+
+!! Blue dark/light
+! *color4:                S_blue
+! *color12:               S_base0
+
+!! Magenta dark/light
+! *color5:                S_magenta
+! *color13:               S_violet
+
+!! Cyan dark/light
+! *color6:                S_cyan
+! *color14:               S_base1
+
+!! White dark/light
+! *color7:                S_base2
+! *color15:               S_base3
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+!! Atom One Light theme
+!! https://gist.github.com/VovanR/9867373f612693778573
+!xterm*background: #f9f9f9
+!xterm*foreground: #383a42
+!! xterm*cursorColor: #d0d0d0
+!xterm*color0: #000000
+!xterm*color1: #E45649
+!xterm*color2: #50A14F
+!xterm*color3: #986801
+!xterm*color4: #4078F2
+!xterm*color5: #A626A4
+!xterm*color6: #0184BC
+!xterm*color7: #A0A1A7
+!xterm*color8: #5c6370
+!xterm*color9: #e06c75
+!xterm*color10: #50A14F
+!xterm*color11: #986801
+!xterm*color12: #4078F2
+!xterm*color13: #A626A4
+!xterm*color14: #0184BC
+!xterm*color15: #ffffff
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+!! Colour scheme: hyperion (light variant)
+!! By Protesilaos Stavrou
+!! https://protesilaos.com/hyperion
+!xterm*background: #f6f6f6
+!xterm*foreground: #4d654e
+! xterm*cursorColor: #4d654e
+!xterm*color0: #0a2d3c
+!xterm*color1: #d94832
+!xterm*color2: #329c50
+!xterm*color3: #dbac13
+!xterm*color4: #1d8fde
+!xterm*color5: #dc76aa
+!xterm*color6: #0eaac8
+!xterm*color7: #e6e6e6
+!xterm*color8: #1a3d4c
+!xterm*color9: #dc7d3a
+!xterm*color10: #4d654e
+!xterm*color11: #8d9474
+!xterm*color12: #6a8ba9
+!xterm*color13: #aa7deb
+!xterm*color14: #9ebcc8
+!xterm*color15: #f6f6f6
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
+
+!#define nord0 #2E3440
+!#define nord1 #3B4252
+!#define nord2 #434C5E
+!#define nord3 #4C566A
+!#define nord4 #D8DEE9
+!#define nord5 #E5E9F0
+!#define nord6 #ECEFF4
+!#define nord7 #8FBCBB
+!#define nord8 #88C0D0
+!#define nord9 #81A1C1
+!#define nord10 #5E81AC
+!#define nord11 #BF616A
+!#define nord12 #D08770
+!#define nord13 #EBCB8B
+!#define nord14 #A3BE8C
+!#define nord15 #B48EAD
+
+!*.foreground:			nord4
+!*.background:			nord0
+!*.cursorColor:			nord4
+!*fading:			35
+!*fadeColor:			nord3
+
+!*.color0:			nord1
+!*.color1:			nord11
+!*.color2:			nord14
+!*.color3:			nord13
+!*.color4:			nord9
+!*.color5:			nord15
+!*.color6:			nord8
+!*.color7:			nord5
+!*.color8:			nord3
+!*.color9:			nord11
+!*.color10:			nord14
+!*.color11:			nord13
+!*.color12:			nord9
+!*.color13:			nord15
+!*.color14:			nord7
+!*.color15:			nord6
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! File: gruvbox-dark.xresources
+!! Description: Retro groove colorscheme generalized
+!! Author: morhetz <morhetz@gmail.com>
+!! Source: https://github.com/morhetz/gruvbox-generalized
+!! Last Modified: 6 Sep 2014
+!! https://github.com/morhetz/gruvbox-contrib/blob/master/xresources/gruvbox-dark.xresources
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+
+!! Hard contrast: *background: #1d2021
+!*background: #282828
+
+!! Soft contrast: *background: #32302f
+!*foreground: #ebdbb2
+
+!! Black + DarkGrey
+!*color0:  #282828
+!*color8:  #928374
+
+!! DarkRed + Red
+!*color1:  #cc241d
+!*color9:  #fb4934
+
+!! DarkGreen + Green
+!*color2:  #98971a
+!*color10: #b8bb26
+
+!! DarkYellow + Yellow
+!*color3:  #d79921
+!*color11: #fabd2f
+
+!! DarkBlue + Blue
+!*color4:  #458588
+!*color12: #83a598
+
+!! DarkMagenta + Magenta
+!*color5:  #b16286
+!*color13: #d3869b
+
+!! DarkCyan + Cyan
+!*color6:  #689d6a
+!*color14: #8ec07c
+
+!! LightGrey + White
+!*color7:  #a89984
+!*color15: #ebdbb2
+
+
+! -----------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+! File: gruvbox-light.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+!! Hard contrast: *background: #f9f5d7
+! *background: #fbf1c7
+!! Soft contrast: *background: #f2e5bc
+! *foreground: #3c3836
+
+!! Black + DarkGrey
+! *color0:  #fdf4c1
+! *color8:  #928374
+
+!! DarkRed + Red
+! *color1:  #cc241d
+! *color9:  #9d0006
+
+!! DarkGreen + Green
+! *color2:  #98971a
+! *color10: #79740e
+
+!! DarkYellow + Yellow
+! *color3:  #d79921
+! *color11: #b57614
+
+!! DarkBlue + Blue
+! *color4:  #458588
+! *color12: #076678
+
+!! DarkMagenta + Magenta
+! *color5:  #b16286
+! *color13: #8f3f71
+
+!! DarkCyan + Cyan
+! *color6:  #689d6a
+! *color14: #427b58
+
+!! LightGrey + White
+! *color7:  #7c6f64
+! *color15: #3c3836
+
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Mocha Dark
+!! https://terminal.sexy/
+
+!! Special
+!*.foreground:   #8a8986
+!*.background:   #28211c
+!*.cursorColor:  #8a8986
+
+!! Black
+!*.color0:       #28211c
+!*.color8:       #666666
+
+!! Red
+!*.color1:       #cf6a4c
+!*.color9:       #cf6a4c
+
+!! Green
+!*.color2:       #54be0d
+!*.color10:      #54be0d
+
+!! Yellow
+!*.color3:       #f9ee98
+!*.color11:      #f9ee98
+
+!! Blue
+!*.color4:       #5ea6ea
+!*.color12:      #5ea6ea
+
+!! Magenta
+!*.color5:       #9b859d
+!*.color13:      #9b859d
+
+!! Cyan
+!*.color6:       #afc4db
+!*.color14:      #afc4db
+
+!! White
+!*.color7:       #8a8986
+!*.color15:      #baae9e
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Frappe
+!! https://github.com/catppuccin/xresources/blob/main/themes/frappe.Xresources
+!*background: #303446
+!*foreground: #c6d0f5
+!*cursorColor: #f2d5cf
+
+!! black
+!*color0: #51576d
+!*color8: #626880
+
+!! red
+!*color1: #e78284
+!*color9: #e78284
+
+!! green
+!*color2: #a6d189
+!*color10: #a6d189
+
+!! yellow
+!*color3: #e5c890
+!*color11: #e5c890
+
+!! blue
+!*color4: #8caaee
+!*color12: #8caaee
+
+!! magenta
+!*color5: #f4b8e4
+!*color13: #f4b8e4
+
+!! cyan
+!*color6: #81c8be
+!*color14: #81c8be
+
+!! white
+!*color7: #b5bfe2
+!*color15: #a5adce
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Macchiato
+!! https://github.com/catppuccin/xresources/blob/main/themes/macchiato.Xresources
+!*background: #24273a
+!*foreground: #cad3f5
+!*cursorColor: #f4dbd6
+
+!! black
+!*color0: #494d64
+!*color8: #5b6078
+
+!! red
+!*color1: #ed8796
+!*color9: #ed8796
+
+!! green
+!*color2: #a6da95
+!*color10: #a6da95
+
+!! yellow
+!*color3: #eed49f
+!*color11: #eed49f
+
+!! blue
+!*color4: #8aadf4
+!*color12: #8aadf4
+
+!! magenta
+!*color5: #f5bde6
+!*color13: #f5bde6
+
+!! cyan
+!*color6: #8bd5ca
+!*color14: #8bd5ca
+
+!! white
+!*color7: #b8c0e0
+!*color15: #a5adcb
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Mocha
+!! https://github.com/catppuccin/xresources/blob/main/themes/mocha.Xresources
+!*background: #1e1e2e
+!*foreground: #cdd6f4
+!*cursorColor: #f5e0dc
+
+!! black
+!*color0: #45475a
+!*color8: #585b70
+
+!! red
+!*color1: #f38ba8
+!*color9: #f38ba8
+
+!! green
+!*color2: #a6e3a1
+!*color10: #a6e3a1
+
+!! yellow
+!*color3: #f9e2af
+!*color11: #f9e2af
+
+!! blue
+!*color4: #89b4fa
+!*color12: #89b4fa
+
+!! magenta
+!*color5: #f5c2e7
+!*color13: #f5c2e7
+
+!! cyan
+!*color6: #94e2d5
+!*color14: #94e2d5
+
+!! white
+!*color7: #bac2de
+!*color15: #a6adc8
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! My Dark Pastel
+!! https://terminal.sexy/
+
+!! Special
+! *.foreground:   #d1ccb0
+! *.background:   #474343
+! *.cursorColor:  #d1ccb0
+
+!! Black
+! *.color0:       #20201d
+! *.color8:       #7d7a68
+
+!! Red
+! *.color1:       #d73737
+! *.color9:       #cc4d13
+
+!! Green
+! *.color2:       #60ac39
+! *.color10:      #60ac39
+
+!! Yellow
+! *.color3:       #cfb017
+! *.color11:      #cfb017
+
+!! Blue
+! *.color4:       #6684e1
+! *.color12:      #6684e1
+
+!! Magenta
+! *.color5:       #b854d4
+! *.color13:      #b854d4
+
+!! Cyan
+! *.color6:       #1fad83
+! *.color14:      #1fad83
+
+!! White
+! *.color7:       #a6a28c
+! *.color15:      #dedbcb
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Neon Colors
+!! https://github.com/logico-dev/Xresources-themes/blob/master/xcolors-neon.Xresources
+
+! *background   : #171717
+! *foreground   : #F8F8F8
+
+!! Black
+! *color0     : #171717
+! *color8     : #38252C
+
+!! Red
+! *color1     : #D81765
+! *color9     : #FF0000
+
+!! Green
+! *color2     : #97D01A
+! *color10    : #76B639
+
+!! Yellow
+! *color3     : #FFA800
+! *color11    : #E1A126
+
+!! Blue
+! *color4     : #16B1FB
+! *color12    : #289CD5
+
+!! Magenta
+! *color5     : #FF2491
+! *color13    : #FF2491
+
+!! Cyan
+! *color6     : #0FDCB6
+! *color14    : #0A9B81
+
+!! White
+! *color7     : #EBEBEB
+! *color15    : #F8F8F8
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Arc
+!! https://raw.githubusercontent.com/selloween/arc-theme-xresources/master/Xresources
+
+! *.background: #383c44
+! *.foreground: #D2D2DD
+
+!! Black
+! *color0: #383c4a
+! *color8: #404552
+
+!! Red
+! *color1: #9A4138
+! *color9: #E7766B
+
+!! Green
+! *color2: #4BEC90
+! *color10: #3CBF75
+
+!! Yellow
+! *color3: #D8D782
+! *color11: #CFCD63
+
+!! Blue
+! *color4: #5294d2
+! *color12: #579CEF
+
+!! Magenta
+! *color5: #CE50DD
+! *color13: #E7766B
+
+!! Cyan
+! *color6: #6BE5E7
+! *color14: #90FDFF
+
+!! White
+! *color7: #CCCCEF
+! *color15: #FFFFEE
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Adapta
+
+! *.background: #F2F3F4
+! *.foreground: #2E4053
+
+!! Black
+! *color0: #383c4a
+! *color8: #404552
+
+!! Red
+! *color1: #9A4138
+! *color9: #E7766B
+
+!! Green
+! *color2: #4BEC90
+! *color10: #3CBF75
+
+!! Yellow
+! *color3: #D8D782
+! *color11: #CFCD63
+
+!! Blue
+! *color4: #5294d2
+! *color12: #579CEF
+
+!! Magenta
+! *color5: #AAFFFF
+! *color13: #E7766B
+
+!! Cyan
+! *color6: #6BE5E7
+! *color14: #90FDFF
+
+!! White
+! *color7: #CCCCEF
+! *color15: #FFFFEE
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+
+!! Grayscale Dark
+!! Special
+! *.foreground:   #b9b9b9
+! *.background:   #101010
+! *.cursorColor:  #b9b9b9
+
+!! Black
+! *.color0:       #101010
+! *.color8:       #525252
+
+!! Red
+! *.color1:       #7c7c7c
+! *.color9:       #7c7c7c
+
+!! Green
+! *.color2:       #8e8e8e
+! *.color10:      #8e8e8e
+
+!! Yellow
+! *.color3:       #a0a0a0
+! *.color11:      #a0a0a0
+
+!! Blue
+! *.color4:       #686868
+! *.color12:      #686868
+
+!! Magenta
+! *.color5:       #747474
+! *.color13:      #747474
+
+!! Cyan
+! *.color6:       #868686
+! *.color14:      #868686
+
+!! White
+! *.color7:       #b9b9b9
+! *.color15:      #f7f7f7
