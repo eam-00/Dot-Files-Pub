@@ -5,69 +5,69 @@
 !! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
 
 !! Black Cursor
-! #define _color0        #000d18
-! #define _color8        #000d18
+#define _color0        #000d18
+#define _color8        #000d18
 
 !! Red Tag
-! #define _color1        #e89393
-! #define _color9        #e89393
+#define _color1        #e89393
+#define _color9        #e89393
 
 !! Green SpecialKey
-! #define _color2        #9ece9e
-! #define _color10       #9ece9e
+#define _color2        #9ece9e
+#define _color10       #9ece9e
 
 !! Yellow Keyword
-! #define _color3        #f0dfaf
-! #define _color11       #f0dfaf
+#define _color3        #f0dfaf
+#define _color11       #f0dfaf
 
 !! Blue Number
-! #define _color4        #8cd0d3
-! #define _color12       #8cd0d3
+#define _color4        #8cd0d3
+#define _color12       #8cd0d3
 
 !! Magenta Precondit
-! #define _color5        #c0bed1
-! #define _color13       #c0bed1
+#define _color5        #c0bed1
+#define _color13       #c0bed1
 
 !! Cyan Float
-! #define _color6        #dfaf8f
-! #define _color14       #dfaf8f
+#define _color6        #dfaf8f
+#define _color14       #dfaf8f
 
 !! White Search
-! #define _color7        #efefef
-! #define _color15       #efefef
+#define _color7        #efefef
+#define _color15       #efefef
 
 !! FMT Include, StatusLine, ErrorMsg
-! #define _colorBD       #ffcfaf
-! #define _colorUL       #ccdc90
-! #define _colorIT       #80d4aa
+#define _colorBD       #ffcfaf
+#define _colorUL       #ccdc90
+#define _colorIT       #80d4aa
 
 !! TXT Normal, Normal, Cursor
-! #define _foreground    #dcdccc
-! #define _background    #1f1f1f
-! #define _cursorColor   #8faf9f
+#define _foreground    #dcdccc
+#define _background    #1f1f1f
+#define _cursorColor   #8faf9f
 
-! XTerm*color0         : _color0
-! XTerm*color1         : _color1
-! XTerm*color2         : _color2
-! XTerm*color3         : _color3
-! XTerm*color4         : _color4
-! XTerm*color5         : _color5
-! XTerm*color6         : _color6
-! XTerm*color7         : _color7
-! XTerm*color8         : _color8
-! XTerm*color9         : _color9
-! XTerm*color10        : _color10
-! XTerm*color11        : _color11
-! XTerm*color12        : _color12
-! XTerm*color13        : _color13
-! XTerm*color14        : _color14
-! XTerm*color15        : _color15
-! XTerm*colorBD        : _colorBD
-! XTerm*colorIT        : _colorIT
-! XTerm*colorUL        : _colorUL
-! XTerm*foreground     : _foreground
-! XTerm*background     : _background
-! XTerm*cursorColor    : _cursorColor
+XTerm*color0         : _color0
+XTerm*color1         : _color1
+XTerm*color2         : _color2
+XTerm*color3         : _color3
+XTerm*color4         : _color4
+XTerm*color5         : _color5
+XTerm*color6         : _color6
+XTerm*color7         : _color7
+XTerm*color8         : _color8
+XTerm*color9         : _color9
+XTerm*color10        : _color10
+XTerm*color11        : _color11
+XTerm*color12        : _color12
+XTerm*color13        : _color13
+XTerm*color14        : _color14
+XTerm*color15        : _color15
+XTerm*colorBD        : _colorBD
+XTerm*colorIT        : _colorIT
+XTerm*colorUL        : _colorUL
+XTerm*foreground     : _foreground
+XTerm*background     : _background
+XTerm*cursorColor    : _cursorColor
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
@@ -546,6 +546,49 @@
 !! white
 !*color7: #bac2de
 !*color15: #a6adc8
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+!! Catppuccin: Latte
+!! https://github.com/catppuccin/xresources/blob/main/themes/latte.Xresources
+
+!! Special Colors
+*foreground:	#4c4f69
+*background:	#eff1f5
+
+!! Black
+*color0:	#5c5f77
+*color8:	#6c6f85
+
+!! Red
+*color1:	#d20f39
+*color9:	#d20f39
+
+!! Green
+*color2:	#40a02b
+*color10:	#40a02b
+
+!! Yellow
+*color3:	#df8e1d
+*color11:	#df8e1d
+
+!! Blue
+*color4:	#1e66f5
+*color12:	#1e66f5
+
+!! Magenta
+*color5:	#8839ef
+*color13:	#8839ef
+
+!! Cyan
+*color6:	#239fb5
+*color14:	#239fb5
+
+!! White
+*color7:	#acb0be
+*color15:	#bcc0cc
+
+
 
 !! -----------------------------------------------------------------------------
 !! -----------------------------------------------------------------------------
