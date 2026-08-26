@@ -135,6 +135,7 @@ XTerm*cursorColor:      _cursorColor
 ! -----------------------------------------------------------------------------
 !! Solarized Light
 !! https://github.com/solarized/xresources/blob/master/Xresources.light
+
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
@@ -160,37 +161,38 @@ XTerm*cursorColor:      _cursorColor
 #define S_cyan          #2aa198
 #define S_green         #859900
 
-!! Black dark/light
+!! Black Dark/Light
 *color0:                S_base02
 *color8:                S_base03
 
-!! Red dark/light
+!! Red Dark/Light
 *color1:                S_red
 *color9:                S_orange
 
-!! Green dark/light
+!! Green Dark/Light
 *color2:                S_green
 *color10:               S_base01
 
-!! Yellow dark/light
+!! Yellow Dark/Light
 *color3:                S_yellow
 *color11:               S_base00
 
-!! Blue dark/light
+!! Blue Dark/Light
 *color4:                S_blue
 *color12:               S_base0
 
-!! Magenta dark/light
+!! Magenta Dark/Light
 *color5:                S_magenta
 *color13:               S_violet
 
-!! Cyan dark/light
+!! Cyan Dark/Light
 *color6:                S_cyan
 *color14:               S_base1
 
-!! White dark/light
+!! White Dark/Light
 *color7:                S_base2
 *color15:               S_base3
+
 
 ! -----------------------------------------------------------------------------
 ! -----------------------------------------------------------------------------
