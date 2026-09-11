@@ -793,3 +793,36 @@ xterm*color15: #ffffff
 !! White
 ! *.color7:       #b9b9b9
 ! *.color15:      #f7f7f7
+
+!! -----------------------------------------------------------------------------
+!! -----------------------------------------------------------------------------
+
+!! "Yellow Phosphorus" (Vintage Amber/Yellow CRT phosphor)
+!! Classic Amber:       #ffb000
+!! Light Amber:         #ffcc00
+
+xterm*vt100.background: #282828
+xterm*vt100.foreground: #ffb000
+xterm*vt100.cursorColor: #ffcc00
+
+! Map ANSI colors to shades of vintage phosphor amber/yellow
+xterm*vt100.color0:  #282828
+xterm*vt100.color1:  #664600
+xterm*vt100.color2:  #7f5800
+xterm*vt100.color3:  #cc8c00
+xterm*vt100.color4:  #664600
+xterm*vt100.color5:  #996900
+xterm*vt100.color6:  #b27b00
+xterm*vt100.color7:  #ffb000
+xterm*vt100.color8:  #664600
+xterm*vt100.color9:  #7f5800
+xterm*vt100.color10: #cc8c00
+xterm*vt100.color11: #e59e00
+xterm*vt100.color12: #664600
+xterm*vt100.color13: #996900
+xterm*vt100.color14: #b27b00
+xterm*vt100.color15: #ffcc00
+
+
+!! EOF 
+
