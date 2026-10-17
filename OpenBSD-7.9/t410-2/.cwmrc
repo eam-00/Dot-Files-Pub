@@ -1,0 +1,140 @@
+## ------------------------------------------------
+## $HOME/.cwmrc from Thinkpad t410-2 - OpenBSD 7.9
+## ------------------------------------------------
+
+unbind-key all
+
+fontname "ShareTechMono-Regular:pixelsize=16:antialias=true"
+## fontname "AdwaitaMono-Regular:pixelsize=12"
+## fontname "Ubuntu Mono:pixelsize=18"
+## fontname "9x15"
+## fontname fixed-11
+
+## Space around the windows
+## ------------------------
+## top bottom left right
+## gap 4 4 4 4
+gap 4 26 4 4
+snapdist 4
+moveamount 5
+
+## Colors:
+## ------
+
+## My Gruvbox palette:
+## ------------------
+color		menubg		"#32302f"
+color		menufg         "#ebdbb2"
+color		font		"#ebdbb2"
+color		selfont		"#32302f"
+color		activeborder	"#ebdbb2"
+color		inactiveborder	"#32302f"
+borderwidth	3
+
+## Gemini provided #1:
+## ------------------
+#color		font           "#ebdbb2"
+#color		selfont        "#fbf1c7"
+#color		menubg         "#282828"
+#color		menufg         "#ebdbb2"
+#color		activeborder   "#d65d0e"
+#color		inactiveborder "#3c3836"
+
+## Gemini provided #2:
+## ------------------
+## CWM Gruvbox Dark Palette (Aqua / Green Accent)
+#color		menubg		"#1d2021"
+#color		menufg		"#fbf1c7"
+#color		font		"#fbf1c7"
+#color		selfont		"#b8bb26"
+#color		activeborder	"#8ec07c"
+#color		inactiveborder	"#3c3836"
+
+sticky yes
+ignore cwmbar
+
+bind-key	CSM-q		quit
+bind-key	CS-r		restart
+
+bind-key	4-Return	terminal
+bind-key	4-l		lock
+bind-key	4S-d		window-hide
+bind-key	4S-n		window-menu-label
+bind-key	4-q		window-delete
+
+bind-key	4-1		group-only-1
+bind-key	4-2		group-only-2
+bind-key	4-3		group-only-3
+bind-key	4-4		group-only-4
+
+bind-key	4S-1		window-movetogroup-1
+bind-key	4S-2		window-movetogroup-2
+bind-key	4S-3		window-movetogroup-3
+bind-key	4S-4		window-movetogroup-4
+
+bind-key	4-d		group-toggle-all
+bind-key	4-g		window-group
+
+bind-key	4-x		window-maximize
+bind-key	4-v		window-vmaximize
+bind-key	4-h		window-hmaximize
+
+bind-key	4S-v		window-vtile
+bind-key	4S-h		window-htile
+
+bind-key	4-r		menu-exec
+bind-key	4-slash		menu-window
+
+## bind-key	4-Right		group-cycle
+## bind-key	4-Left		group-rcycle
+## bind-key	4-Down		window-lower
+## bind-key	4-Up		window-raise
+## bind-key	M-Tab		window-cycle-ingroup
+
+bind-key	M-Tab		window-cycle
+
+bind-key	4S-Left		window-resize-left-big
+bind-key	4S-Down		window-resize-down-big
+bind-key	4S-Up		window-resize-up-big
+bind-key	4S-Right	window-resize-right-big
+
+bind-key	4C-Left		window-move-left-big
+bind-key	4C-Down		window-move-down-big
+bind-key	4C-Up		window-move-up-big
+bind-key	4C-Right	window-move-right-big
+
+bind-key	4-Left		window-snap-left
+bind-key	4-Down		window-snap-down
+bind-key	M-Up		window-snap-up
+bind-key	4-Right		window-snap-right
+
+# bind-key	4S-F1		window-snap-up-left
+# bind-key	4S-F2		window-snap-down-left
+# bind-key	4S-F3		window-snap-up-right
+# bind-key	4S-F4		window-snap-down-right
+
+## Mouse:
+## -----
+bind-mouse	4S-1		window-group
+bind-mouse	M-1		window-move
+bind-mouse	M-3		window-resize
+
+## Programs:
+## --------
+command	Terminal	xterm
+command	Firefox		firefox
+command	Top		"xterm -geometry 106x39+4+34 -e \"top -s 0.6\""
+command Pfetch		"xterm -geometry 72x15+13+4 -e ~/Documents/scripts/util-scripts/my-pfetch-OpenBSD;read"
+command	Xcalc		xcalc
+command	Xmag		/usr/X11R6/bin/xmag
+command	Xkill		xkill
+command	Screenhot	/home/epsilon-alpha-mu/Documents/scripts/util-scripts/take-screenshot.sh
+command	Lock		xlock
+
+## Volume control:
+## --------------
+bind-key	CSM-Up		"sndioctl output.level=+0.05"
+bind-key	CSM-Down	"sndioctl output.level=-0.05"
+bind-key	CM-m		"sndioctl output.mute=toggle"
+
+## EOF ##
