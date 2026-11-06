@@ -1,5 +1,7 @@
 **GenMon XFCE Plugin**
 
+The generic monitor scripts that I'm using on the Ideapad y410p.
+
 Link:
 
 * [Genmon Plugin](https://docs.xfce.org/panel-plugins/xfce4-genmon-plugin).  
