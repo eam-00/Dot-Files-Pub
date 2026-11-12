@@ -1,4 +1,4 @@
-**Thinkpad-Ideapad-Y410p**
+**Lenovo Ideapad Y410P**
 
 ```
 ideapad-y410p:~ > pfetch 
