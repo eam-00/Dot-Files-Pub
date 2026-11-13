@@ -2,6 +2,7 @@
 
 The generic monitor scripts that I'm using on the Ideapad y410p.  
 
+![GenMon Plugins](https://github.com/eam-00/Dot-Files-Pub/blob/master/Thinkpad-Ideapad-Y410p/Pictures/GenMon-Ideapad-y410p_2026-11-13_16-52-59.png)
 [Screenshot](https://github.com/eam-00/Dot-Files-Pub/blob/master/Thinkpad-Ideapad-Y410p/Pictures/Debian-13-Ideapad-y410p-11-07_11-06-20.png)
 
 
